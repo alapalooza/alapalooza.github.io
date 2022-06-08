@@ -67,6 +67,13 @@ function display2018() {
 	current_page.removeAttribute("hidden"); 
 }
 
+function displayContact() {
+	hideAllPages();
+	document.title = WEBSITE_NAME + " - Contact";
+	var current_page = document.getElementById("page-contact");
+	current_page.removeAttribute("hidden"); 
+}
+
 function displayError() {
 	var pageTitle = "Error";
 	document.title = WEBSITE_NAME + " - " + pageTitle;
@@ -78,26 +85,29 @@ function displayError() {
 }
 
 function checkUrlAndLoadCorrespondingDisplay() {
-	if(window.location.href == INDEX_HTML_PATH + "#home" || window.location.href == "https://barrieradiator.github.io/#home" || window.location.href == "domain.com#home") {
+	if(window.location.href == INDEX_HTML_PATH + "#home" || window.location.href == "https://alapalooza.github.io/#home" || window.location.href == "domain.com#home") {
 		displayHome();
 	}
-	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://barrieradiator.github.io/" || window.location.href == "domain.com") {
+	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://alapalooza.github.io/" || window.location.href == "domain.com") {
 		displayIndex();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#info" || window.location.href == "https://barrieradiator.github.io/#info" || window.location.href == "domain.com#info") {
+	else if(window.location.href == INDEX_HTML_PATH + "#info" || window.location.href == "https://alapalooza.github.io/#info" || window.location.href == "domain.com#info") {
 		displayInfo();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#entertainment" || window.location.href == "https://barrieradiator.github.io/#entertainment" || window.location.href == "domain.com#entertainment") {
+	else if(window.location.href == INDEX_HTML_PATH + "#entertainment" || window.location.href == "https://alapalooza.github.io/#entertainment" || window.location.href == "domain.com#entertainment") {
 		displayEntertainment();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#merchandise" || window.location.href == "https://barrieradiator.github.io/#merchandise" || window.location.href == "domain.com#merchandise") {
+	else if(window.location.href == INDEX_HTML_PATH + "#merchandise" || window.location.href == "https://alapalooza.github.io/#merchandise" || window.location.href == "domain.com#merchandise") {
 		displayMerchandise();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#sponsors" || window.location.href == "https://barrieradiator.github.io/#sponsors" || window.location.href == "domain.com#sponsors") {
+	else if(window.location.href == INDEX_HTML_PATH + "#sponsors" || window.location.href == "https://alapalooza.github.io/#sponsors" || window.location.href == "domain.com#sponsors") {
 		displaySponsors();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#2018" || window.location.href == "https://barrieradiator.github.io/#2018" || window.location.href == "domain.com#2018") {
+	else if(window.location.href == INDEX_HTML_PATH + "#2018" || window.location.href == "https://alapalooza.github.io/#2018" || window.location.href == "domain.com#2018") {
 		display2018();
+	}
+	else if(window.location.href == INDEX_HTML_PATH + "#contact" || window.location.href == "https://alapalooza.github.io/#contact" || window.location.href == "domain.com#contact") {
+		displayContact();
 	}
 	else {
 		displayError();
