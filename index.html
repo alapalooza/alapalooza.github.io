@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Alapalooza 2019: 5th Annual Porcupine Bay BBQ</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css">
+	</head>
+	<body onload="checkUrlAndLoadCorrespondingDisplay()">
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="" onclick="displayIndex()">Alapalooza</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-info" href="#info" onclick="displayInfo()">Info</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-entertainment" href="#entertainment" onclick="displayEntertainment()">Entertainment</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-merchandise" href="#merchandise" onclick="displayMerchandise()">Merchandise</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-sponsors" href="#sponsors" onclick="displaySponsors()">Sponsors</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-2018" href="#2018" onclick="display2018()">2018</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-contact" href="#contact" onclick="displayContact()">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+			<main class="container">
+				<div class="container-fluid">
+					<div id="page-index" hidden>
+						<h1 id="header"><script>WEBSITE_NAME</script></h1>
+						<div class="container-fluid">
+							<img src="FB Graphic.jpg" class="w-100">
+						</div>
+					</div>
+					<div id="page-home" hidden>
+						<h1 id="header"><script>WEBSITE_NAME</script></h1>
+						<p id="main-body-paragraph">Default Home Page Data</p>
+					</div>
+					<div id="page-info" hidden>
+						<h1 id="header">Info</h1>
+						<p id="main-body-paragraph">				
+						<h2>Civic Weekend Sunday (August 4<sup>th</sup>), RAIN OR SHINE</h2>
+						<ul>
+							<li>All ages and cottage guests welcome</li>
+							<li>BBQ &amp; Pot Luck Dinner</li>
+							<li>Phenomenal Live Entertainment – 5 Bands</li>
+							<li>Spectacular Sound & Light Show by John Bain & Les Weller</li>
+							<li><a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">Alapalooza 2019 event T-shirts, Hats & Koozies available</a></li>
+							<ul>
+								<li>Orders must be placed by Tuesday July 16th.</li>
+								<li>No payment is required online.</li>
+								<li>Please pay in Cash when you pick up or send Al an e-transfer at sledhead99@sympatico.ca.</li>
+								<li>Check out the Alapalooza Combo for the best deal!</li>
+							</ul>
+						</ul>
+						<hr>
+						<h2>BBQ &amp; POT LUCK</h2>
+						<ul>
+							<li>New for 2019 is Andrew’s signature Roast Beef – hot smoked and finished sous vide. And on the menu for the 5th year is Andrew’s famous smoked BBQ pulled pork</li>
+							<li>Bring your favorite salad, side, appetizer, dessert, or munchies</li>
+							<li>Bring Refreshments (Cans Please), Lawn chairs & your appetite</li>
+							<li>Please COME EARLY – we need your sides and appetizers in order to start serving – we can’t just eat meat!</li>
+						</ul>
+						</p>
+					</div>
+					<div id="page-entertainment" hidden>
+						<h1 id="header">Live Entertainment</h1>
+							<h2>Tom Barlow Band</h2>
+							<p>Click the arrows on the photo to see more.</p>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col">
+										<div id="Tom-Barlow-Band" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/entertainment/tbb-1.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tbb-2.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tbb-3.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tbb-4.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tbb-5.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tbb-6.jpg" class="d-block w-100" alt="...">
+												</div>
+											</div>
+											<button class="carousel-control-prev" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col">
+										<p>Returning for the 3rd year is the amazing Tom Barlow, his phenomenal band and incredible guest sax player Kristen Prince. Tom Barlow is a 4 time Juno nominated singer/songwriter, Canadian Rising Star Award winner with 3 Top 10 hits, playing high energy tunes from all your favorite artists - Get ready to dance, watch the amazing light show and sing along! For an incredible Monday night out, you must go see Tom and the band with numerous guest musicians as he hosts Jam Night at Shore Grill and Grotto in Mississauga. <a href="https://www.facebook.com/BarlowCommunity/" target="_blank">Follow Tom and the band on Facebook.</a></p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<h3>Gap 33</h3>
+							<p>Click the arrows on the photo to see more.</p>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col">
+										<div id="Gap-33" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/entertainment/g33-1.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/g33-2.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/g33-3.jpg" class="d-block w-100" alt="...">
+												</div>
+											</div>
+											<button class="carousel-control-prev" type="button" data-bs-target="#Gap-33" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#Gap-33" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col">
+										<p>We’re excited to have Porcupine Bay cottagers Steve and Dylan Wallace return for their 4th Civic holiday performance on the bay; and for the first time with their full 	original band! Joining Steve (keyboard and vocals) and Dylan (guitar and vocals) are Adam Cannon on drums and Pete Moss on bass. Some exciting news: in 2018, Dylan was a finalist on The Shot Season 6 and has released a catchy single “Caught Me Looking”. Hopefully they will play it for us! <br>
+										<a href="https://www.facebook.com/Gap-33-1692478664306884/" target="_blank">Gap 33s' Facebook page.</a><br>
+										<a href="https://www.facebook.com/DWallaceMusic/" target="_blank">Dylan Wallaces' Facebook page.</a></p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<h3>Sidebar</h3>
+							<p>Click the arrows on the photo to see more.</p>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col">										
+										<div id="Sidebar" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/entertainment/sb-1.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/sb-2.jpg" class="d-block w-100" alt="...">
+												</div>
+											</div>
+											<button class="carousel-control-prev" type="button" data-bs-target="#Sidebar" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#Sidebar" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col">
+										<p>Returning for their third Alapalooza performance, Kawagama Lake (Fish Pole Point) cottager Vanessa Slack (vocals) and Shawn Colbeck (guitar) are sure to entertain us. Make sure you get here early to catch their opening set – classics you will most surely know and love to sing along to. And then you will definitely want to be here for their outstanding high energy performance between Barlow's sets! And if this year’s like previous years, you may catch Vanessa up on stage with Tom Barlow!<br>
+										<a href="https://www.facebook.com/profile.php?id=100009949747195" target="_blank">Sidebar's Facebook page.</a></p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<h3>The Mighty Fish</h3>
+							<p>Click the arrows on the photo to see more.</p>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col">										
+										<div id="The-Mighty-Fish" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/entertainment/tmf-1.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/tmf-2.jpg" class="d-block w-100" alt="...">
+												</div>
+											</div>
+											<button class="carousel-control-prev" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col">
+										<p>The morning after Alapalooza 2018, I received a message (from someone I hadn’t met) thanking us for such a great night. It turns out their family has a cottage in Marina Bay and a number of family members (Kit Allen, Michelle & Craig Hedley) play in a Burlington based band called The Mighty Fish. Their tag line is “Acoustic music for the masses” blending the classics and the modern to let you get your party on! Besides the guitars, percussion and incredible vocals, they also have a violin… amplified of course (or is it a fiddle?). It really adds to the band’s sound and is a first for Alapalooza! I’m sure you will be as impressed as I was when I first saw them!<br>
+										<a href="http://www.themightyfish.ca/" target="_blank">The Mighty Fish's Website.</a><br>
+										<a href="https://www.facebook.com/groups/Themightyfish/" target="_blank">The Mighty Fish's Facebook page.</a></p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<h3>Bottoms Up</h3>
+							<p>Click the arrows on the photo to see more.</p>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col">										
+										<div id="Bottoms-Up" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/entertainment/bu-1.jpg" class="d-block w-100" alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/entertainment/bu-2.jpg" class="d-block w-100" alt="...">
+												</div>
+											</div>
+											<button class="carousel-control-prev" type="button" data-bs-target="#Bottoms-Up" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#Bottoms-Up" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col">
+										<p>We’re pleased to have Bear Lake represented this year at Alapalooza, thanks to cottager Steve Koslowski and his Barrie based band Bottoms Up. Playing some of the greatest classic rock tunes are Raul Garcia on lead vocals, Dave Martel on the skins, Roger Moore on the low end, and Steve Koslowski and Dean Woods on guitars. They play as a duo and with the full band at various locations including Barrie, Orangeville, Cambridge and Horseshoe Valley. They are sure to rock the bay! Bottom's Up - ON THE ROCKS!<br>
+										<a href="https://www.facebook.com/BottomsUpBarrie/" target="_blank">Bottoms Up's Facebook page.</a></p>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div id="page-merchandise" hidden>
+						<h1 id="header">Merchandise</h1>
+						
+						<a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">
+							<img src="images/merchandise/Alapalooza_Store_Header_Jul3-2019.jpg"class="w-100 rounded">
+						</a>
+						<br>
+							<table border="1" class="w-100">
+								<tr border="0">
+									<td border="0">
+										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALSHIRT" target="_blank"><img src="images/merchandise/Alapalooza_T_TNT_Jun28-2019.jpg" height="256" width="256" class="rounded"></a>
+									</td>
+									<td border="0">
+										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALHAT" target="_blank"><img src="images/merchandise/Alapalooza_Hat_TNT_Jun28-2019.jpg" height="256" width="256" class="rounded"></a>
+									</td>
+									<td border="0">
+										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALKOOZIE" target="_blank"><img src="images/merchandise/Alapalooza_BeerKoozie_TNT_Jun28-2019_v2.jpg" height="256" width="256" class="rounded"></a><br>
+									</td>
+								</tr>
+								<tr border="0">
+									<td colspan="3" border="0">
+										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALCOMBO" target="_blank"><img src="images/merchandise/Alapalooza_Combined_TNT_Jul2-2019.jpg" height="256"width="416" class="rounded"></a>
+									</td>
+								</tr>
+							</table>
+							<ul>
+								<li><a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">Alapalooza 2019 event T-shirts, Hats & Koozies available (click here or on one of the photos to order)</a></li>
+								<ul>
+									<li>Orders must be placed by Tuesday July 16th.</li>
+									<li>No payment is required online.</li>
+									<li>Please pay in Cash when you pick up or send Al an e-transfer at sledhead99@sympatico.ca.</li>
+									<li>Check out the Alapalooza Combo for the best deal!</li>
+								</ul>
+							</ul>
+					</div>
+					<div id="page-sponsors" hidden>
+						<h1 id="header">Sponsors</h1>
+							<p>Thanks to our sponsors / supporters for helping to make the event possible.</p>
+
+							<a href="https://www.johnbacherconstruction.com/" target="_blank"><img src="https://www.johnbacherconstruction.com/uploads/t6qq1Cy8/691x0_530x0/logo_alt.png" alt="Bacher Construction" height="90" width="330"></a>
+							<a href="http://ravecontracting.ca/" target="_blank"><img src="http://ravecontracting.ca/img/newravelogolargeweb.jpg" alt="Rave Contracting" height="90" width="330"></a>
+							<a href="https://www.tntworld.com/" target="_blank"><img src="56582269_2176683719086061_1214225428248526848_n.png" alt="The Next Trend Design" height="90" width="330"></a>
+							<a href="http://mccombeconsulting.com" target="_blank"><img src="McComb Consulting Logo.png" alt="McComb Consulting" height="111" width="330"></a>
+							<a href="http://www.highlandpackers.com/" target="_blank"><img src="http://www.highlandpackers.com/images/hpllogo.gif" alt="Highland Packers" height="90" width="330"></a>
+							<a href="http://www.wellerpublishing.com/" target="_blank"><img src="Weller.jpg" height="90" width="330" alt="Weller Publishing"></a>
+							<a href="http://www.cleaningcentral.ca/" target="_blank"><img src="Untitled.png" height="90" width="330" alt="Cleaning Central"></a>
+					</div>
+					<div id="page-2018" hidden>
+						<h1 id="header">Last year!</h1>
+						<p>Click the arrows on the photo to see more.</p>
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/2018/1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/2.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/3.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/4.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/5.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/6.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/7.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/8.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/9.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/2018/12.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div id="page-contact" hidden>
+						<h1 id="header">Contact</h1>				
+						
+				<h3>Als' E-mail: sledhead99@sympatico.ca</h3>
+				<h3>Kyle's E-mail: kyle.g.s.james@gmail.com</h3>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
