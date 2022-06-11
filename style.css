@@ -1,0 +1,11 @@
+h2.center-text {
+	text-align:centre;
+	}
+	
+p.urgent {
+	font-size: 2em;
+}
+
+div#TomBarlowBand {
+	height: fixed;
+}

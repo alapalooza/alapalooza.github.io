@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Alapalooza 2019: 5th Annual Porcupine Bay BBQ</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	<body onload="checkUrlAndLoadCorrespondingDisplay()">
 	<script src="script.js"></script>
@@ -20,7 +20,10 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link" id="header-link-info" href="#info" onclick="displayInfo()">Info</a>
+								<a class="nav-link" id="header-link-event-details" href="#event-details" onclick="displayEventDetails()">Event Details</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="header-link-vip" href="#vip" onclick="displayVip()">VIP On-shore Experience</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" id="header-link-entertainment" href="#entertainment" onclick="displayEntertainment()">Entertainment</a>
@@ -31,9 +34,18 @@
 							<li class="nav-item">
 								<a class="nav-link" id="header-link-sponsors" href="#sponsors" onclick="displaySponsors()">Sponsors</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-2018" href="#2018" onclick="display2018()">2018</a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Photo Galleries
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" id="header-link-gallery-2018" href="#gallery-2018" onclick="displayGallery2018()">Alapalooza 2018</a></li>
+									<li><a class="dropdown-item" id="header-link-gallery-2019" href="#gallery-2019" onclick="displayGallery2019()">Alapalooza 2019</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" id="header-link-gallery-2021" href="#gallery-2021" onclick="displayGallery2021()">Alapalooza 2021</a></li>
+								</ul>
 							</li>
+
 							<li class="nav-item">
 								<a class="nav-link" id="header-link-contact" href="#contact" onclick="displayContact()">Contact</a>
 							</li>
@@ -47,323 +59,887 @@
 					<div id="page-index" hidden>
 						<h1 id="header"><script>WEBSITE_NAME</script></h1>
 						<div class="container-fluid">
-							<img src="FB Graphic.jpg" class="w-100">
+							<img src="images/alapalooza_2022_poster.jpg" alt="Alapalooza 2022 Poster" class="w-100">
+						</div>
+						
+					</div>
+					
+					<div id="page-event-details" hidden>
+					
+						<h1 id="header-event-details"><strong>Event Details</strong></h1>			
+						<h2 class="center-text">Alapalooza 2022<br>Civic Holiday Weekend<br>Sunday July 31, 2022<br><strong>Rain or Shine</strong></h2>
+						<div style="width:50%;float:left;">
+							<ul>
+								<li>Live Entertainment – 2 Bands, 2 Duos & 1 Solo</li>
+								<li>Spectacular Sound & Light Show</li>
+								<li>2 stages – The Mancave & Lakeside</li>
+								<li>Anchor your boat and watch from the bay - everyone welcome</li>
+								<li>4 Live feed video cameras
+									<ul>
+										<li>18 ft concert projection screen at lake edge for spectacular boat viewing</li>
+										<li>Streamed live to YouTube</li>
+									</ul>
+								</li>
+								<li>Cost is free, but donations to help cover the bands are greatly appreciated</li>
+								<li>Alapalooza 2022 event T-shirts, Hats & Koozies are available</li>
+							</ul>
+						</div>
+
+						<div style="width:50%;float:right;height:100%;">
+							<div id="gallery-event-details" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/event-details/Lake1.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake2.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake3.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake4.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake5.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake6.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake7.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/event-details/Lake8.jpg" class="d-block w-100" alt="...">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#gallery-event-details" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#gallery-event-details" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id="page-vip" hidden>
+					
+						<h1 id="header-vip"><strong>VIP On-Shore Experience</strong></h1>
+						
+						<div style="width:50%;float:left;height:100%;">
+							<ul>
+								<li>Limited number of on-shore guests by invitation only</li>
+								<li>Includes fully catered Southern BBQ Dinner by Chef Andrew & crew
+									<ul>
+										<li>Smoked Beef Brisket, Pulled Pork & BBQ Chicken</li>
+										<li>Smoked BBQ Baked Beans</li>
+										<li>Fresh baked corn bread</li>
+										<li>Corn on the cob, dinner rolls</li>
+										<li>Coleslaw, potato salad, bean salad</li>
+										<li>Dessert</li>
+									</ul>
+								</li>
+								<li>Includes Alapalooza 2022 T-shirt, Koozie & VIP Lanyard</li>
+								<li>Includes chance of winning door prizes</li>
+								<li>Lawn seating – bring your own chairs</li>
+								<li>Bring your own refreshments (cans / plastic containers only please)</li>
+								<li>$50 per person</li>
+								<li>Kids 12 and under free with parent (lanyard but no shirt or koozie)</li>
+								<li>You must wear your VIP Lanyard to be on shore.</li>
+							</ul>
+						</div>
+					
+						<div style="width:50%;float:right;height:100%;">
+							<div id="gallery-event-details" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/vip/VIP1.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP2.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP3.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP4.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP5.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP6.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP7.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP8.jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/vip/VIP9.jpg" class="d-block w-100" alt="...">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#gallery-event-details" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#gallery-event-details" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
 						</div>
 					</div>
-					<div id="page-home" hidden>
-						<h1 id="header"><script>WEBSITE_NAME</script></h1>
-						<p id="main-body-paragraph">Default Home Page Data</p>
-					</div>
-					<div id="page-info" hidden>
-						<h1 id="header">Info</h1>
-						<p id="main-body-paragraph">				
-						<h2>Civic Weekend Sunday (August 4<sup>th</sup>), RAIN OR SHINE</h2>
-						<ul>
-							<li>All ages and cottage guests welcome</li>
-							<li>BBQ &amp; Pot Luck Dinner</li>
-							<li>Phenomenal Live Entertainment – 5 Bands</li>
-							<li>Spectacular Sound & Light Show by John Bain & Les Weller</li>
-							<li><a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">Alapalooza 2019 event T-shirts, Hats & Koozies available</a></li>
-							<ul>
-								<li>Orders must be placed by Tuesday July 16th.</li>
-								<li>No payment is required online.</li>
-								<li>Please pay in Cash when you pick up or send Al an e-transfer at sledhead99@sympatico.ca.</li>
-								<li>Check out the Alapalooza Combo for the best deal!</li>
-							</ul>
-						</ul>
-						<hr>
-						<h2>BBQ &amp; POT LUCK</h2>
-						<ul>
-							<li>New for 2019 is Andrew’s signature Roast Beef – hot smoked and finished sous vide. And on the menu for the 5th year is Andrew’s famous smoked BBQ pulled pork</li>
-							<li>Bring your favorite salad, side, appetizer, dessert, or munchies</li>
-							<li>Bring Refreshments (Cans Please), Lawn chairs & your appetite</li>
-							<li>Please COME EARLY – we need your sides and appetizers in order to start serving – we can’t just eat meat!</li>
-						</ul>
-						</p>
-					</div>
+					
 					<div id="page-entertainment" hidden>
-						<h1 id="header">Live Entertainment</h1>
-							<h2>Tom Barlow Band</h2>
-							<p>Click the arrows on the photo to see more.</p>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col">
-										<div id="Tom-Barlow-Band" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="images/entertainment/tbb-1.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tbb-2.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tbb-3.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tbb-4.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tbb-5.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tbb-6.jpg" class="d-block w-100" alt="...">
-												</div>
+						<h1 id="header-entertainment">Live Entertainment</h1>
+						<h2>Tom Barlow Band</h2>
+						<p>Click the arrows on the photo to see more.</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<div id="Tom-Barlow-Band" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/entertainment/tom-barlow/Barlow1.jpg" class="d-block w-100" alt="...">
 											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow2.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow3.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow4.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow5.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow6.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow7.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow8.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow9.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow10.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow11.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow12.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow13.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/tom-barlow/Barlow14.jpg" class="d-block w-100" alt="...">
+											</div>
 										</div>
-									</div>
-									<div class="col">
-										<p>Returning for the 3rd year is the amazing Tom Barlow, his phenomenal band and incredible guest sax player Kristen Prince. Tom Barlow is a 4 time Juno nominated singer/songwriter, Canadian Rising Star Award winner with 3 Top 10 hits, playing high energy tunes from all your favorite artists - Get ready to dance, watch the amazing light show and sing along! For an incredible Monday night out, you must go see Tom and the band with numerous guest musicians as he hosts Jam Night at Shore Grill and Grotto in Mississauga. <a href="https://www.facebook.com/BarlowCommunity/" target="_blank">Follow Tom and the band on Facebook.</a></p>
+										<button class="carousel-control-prev" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#Tom-Barlow-Band" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
 									</div>
 								</div>
-							</div>
-							<hr>
-							<h3>Gap 33</h3>
-							<p>Click the arrows on the photo to see more.</p>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col">
-										<div id="Gap-33" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="images/entertainment/g33-1.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/g33-2.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/g33-3.jpg" class="d-block w-100" alt="...">
-												</div>
-											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#Gap-33" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#Gap-33" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
-										</div>
-									</div>
-									<div class="col">
-										<p>We’re excited to have Porcupine Bay cottagers Steve and Dylan Wallace return for their 4th Civic holiday performance on the bay; and for the first time with their full 	original band! Joining Steve (keyboard and vocals) and Dylan (guitar and vocals) are Adam Cannon on drums and Pete Moss on bass. Some exciting news: in 2018, Dylan was a finalist on The Shot Season 6 and has released a catchy single “Caught Me Looking”. Hopefully they will play it for us! <br>
-										<a href="https://www.facebook.com/Gap-33-1692478664306884/" target="_blank">Gap 33s' Facebook page.</a><br>
-										<a href="https://www.facebook.com/DWallaceMusic/" target="_blank">Dylan Wallaces' Facebook page.</a></p>
-									</div>
+
+								<div class="col">
+									<p>After missing the past 2 years we are excited to bring back the amazing Tom Barlow Band for their 4th Alapalooza appearance. Tom is a 4 time Juno nominated singer/songwriter, Canadian Rising Star Award winner with 3 Top 10 hits, playing high energy tunes from all your favorite artists - Get ready to dance, watch the amazing light show and sing along! Playing with Tom are John Bride on guitar (Cameo Blues Band, Amanda Marshall), Kristen Prince on sax, Stan Miczek on bass (Sass Jordan, Guess Who, Kim Mitchell) and Dean Glover on drums.  You can catch Tom and the band every Thursday this summer on the outdoor stage at Shore Grille and Grotto in Mississisauga.<br>
+									<a href="http://www.facebook.com/BarlowCommunity/">Tom Barlow Band on Facebook</a><br>
+									<a href="http://www.barlowonline.com/">Tom Barlow Band Website</a>.</p>
 								</div>
 							</div>
-							<hr>
-							<h3>Sidebar</h3>
-							<p>Click the arrows on the photo to see more.</p>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col">										
-										<div id="Sidebar" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="images/entertainment/sb-1.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/sb-2.jpg" class="d-block w-100" alt="...">
-												</div>
+						</div>
+							
+						<hr>
+						<h3>Compliments Of The House</h3>
+						<p>Click the arrows on the photo to see more.</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col" style="float:right;">
+									<div id="Compliments-House" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/entertainment/compliments/Compliments1.jpg" class="d-block w-100" alt="...">
 											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#Sidebar" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#Sidebar" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments2.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments3.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments4.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments5.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments6.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments7.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments8.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/compliments/Compliments9.jpg" class="d-block w-100" alt="...">
+											</div>
 										</div>
-									</div>
-									<div class="col">
-										<p>Returning for their third Alapalooza performance, Kawagama Lake (Fish Pole Point) cottager Vanessa Slack (vocals) and Shawn Colbeck (guitar) are sure to entertain us. Make sure you get here early to catch their opening set – classics you will most surely know and love to sing along to. And then you will definitely want to be here for their outstanding high energy performance between Barlow's sets! And if this year’s like previous years, you may catch Vanessa up on stage with Tom Barlow!<br>
-										<a href="https://www.facebook.com/profile.php?id=100009949747195" target="_blank">Sidebar's Facebook page.</a></p>
+										<button class="carousel-control-prev" type="button" data-bs-target="#Compliments-House" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#Compliments-House" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
 									</div>
 								</div>
-							</div>
-							<hr>
-							<h3>The Mighty Fish</h3>
-							<p>Click the arrows on the photo to see more.</p>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col">										
-										<div id="The-Mighty-Fish" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="images/entertainment/tmf-1.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/tmf-2.jpg" class="d-block w-100" alt="...">
-												</div>
-											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
-										</div>
-									</div>
-									<div class="col">
-										<p>The morning after Alapalooza 2018, I received a message (from someone I hadn’t met) thanking us for such a great night. It turns out their family has a cottage in Marina Bay and a number of family members (Kit Allen, Michelle & Craig Hedley) play in a Burlington based band called The Mighty Fish. Their tag line is “Acoustic music for the masses” blending the classics and the modern to let you get your party on! Besides the guitars, percussion and incredible vocals, they also have a violin… amplified of course (or is it a fiddle?). It really adds to the band’s sound and is a first for Alapalooza! I’m sure you will be as impressed as I was when I first saw them!<br>
-										<a href="http://www.themightyfish.ca/" target="_blank">The Mighty Fish's Website.</a><br>
-										<a href="https://www.facebook.com/groups/Themightyfish/" target="_blank">The Mighty Fish's Facebook page.</a></p>
-									</div>
+								<div class="col">
+									<p>Porcupine Bay cottager Steve Wallace will be returning for his 6th show at Alapalooza - this time with his new live party band! Steve (and his son Dylan) played previously with Gap 33, and the Dylan Wallace Band. Joining Steve (keyboard and vocals) are Malayka Ghanem (vocals), Matt McWaters (bass), Matt Del Grosso (drums) and Kyle Renton (guitar).  Compliments of the House will be sure to entertain us with a variety of danceable party tunes from the 60’s to present – you will likely be dancing and singing to a couple disco favorites among other classics.<br>
+									<a href="http://www.facebook.com/compliments.live" target="_blank">Compliments of the House Facebook page</a><br>
+									<a href="http://www.complimentslive.com/the-band" target="_blank">Compliments of the House Website</a></p>
 								</div>
 							</div>
-							<hr>
-							<h3>Bottoms Up</h3>
-							<p>Click the arrows on the photo to see more.</p>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col">										
-										<div id="Bottoms-Up" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="images/entertainment/bu-1.jpg" class="d-block w-100" alt="...">
-												</div>
-												<div class="carousel-item">
-													<img src="images/entertainment/bu-2.jpg" class="d-block w-100" alt="...">
-												</div>
+						</div>
+							
+						<hr>
+						<h3>The Mighty Fish</h3>
+						<p>Click the arrows on the photo to see more.</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">										
+									<div id="The-Mighty-Fish" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/entertainment/the-mighty-fish/Fish1.jpg" class="d-block w-100" alt="...">
 											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#Bottoms-Up" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#Bottoms-Up" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-mighty-fish/Fish2.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-mighty-fish/Fish3.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-mighty-fish/Fish4.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-mighty-fish/Fish5.jpg" class="d-block w-100" alt="...">
+											</div>
 										</div>
-									</div>
-									<div class="col">
-										<p>We’re pleased to have Bear Lake represented this year at Alapalooza, thanks to cottager Steve Koslowski and his Barrie based band Bottoms Up. Playing some of the greatest classic rock tunes are Raul Garcia on lead vocals, Dave Martel on the skins, Roger Moore on the low end, and Steve Koslowski and Dean Woods on guitars. They play as a duo and with the full band at various locations including Barrie, Orangeville, Cambridge and Horseshoe Valley. They are sure to rock the bay! Bottom's Up - ON THE ROCKS!<br>
-										<a href="https://www.facebook.com/BottomsUpBarrie/" target="_blank">Bottoms Up's Facebook page.</a></p>
+										<button class="carousel-control-prev" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#The-Mighty-Fish" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
 									</div>
 								</div>
+								<div class="col">
+									<p>In 2019, The Mighty Fish played at Alapalooza in their full band configuration. Last year Kit Allen (vocals, beat box) and Michelle Hedley (vocals, guitar) played for us as a duo. They have a family cottage in Marina Bay and come from a very musical family. They will be returning as a duo again this year unless Michelle convinces her husband Craig (guitar) to join them. The Mighty Fish can be seen playing the bars and pubs in the Burlington / Hamilton area. Their tag line is “Acoustic music for the masses” blending the classics and the modern to let you get your party on! Michelle is also busy playing the Niagara region wineries and bistros as a solo artist. <br>
+									<a href="http://www.themightyfish.ca/" target="_blank">The Mighty Fish's Website.</a><br>
+									<a href="https://www.facebook.com/groups/Themightyfish/" target="_blank">The Mighty Fish's Facebook page.</a><br>
+									<a href="http://www.facebook.com/MichelleHedleyAcoustics" target="_blank">Michelle Hedley's Facebook page</a></p>
+
+								</div>
 							</div>
-					</div>
-					<div id="page-merchandise" hidden>
-						<h1 id="header">Merchandise</h1>
+						</div>
 						
-						<a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">
-							<img src="images/merchandise/Alapalooza_Store_Header_Jul3-2019.jpg"class="w-100 rounded">
-						</a>
+						<hr>
+						<h3>The Duomatics</h3>
+						<p>Click the arrows on the photo to see more.</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">										
+									<div id="The-Duomatics" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/entertainment/the-duomatics/Duomatics1.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-duomatics/Duomatics2.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-duomatics/Duomatics3.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/the-duomatics/Duomatics4.jpg" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button" data-bs-target="#The-Duomatics" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#The-Duomatics" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col">
+									<p>Last summer I had the pleasure to watch Peter Bowering play guitar and sing on White Trout Bay. This year we welcome Peter (vocals, guitar, drums) and John Gurnsey (drums, vocals, guitar, piano) - The Duomatics - to play at Alapalooza. The Duomatics are an acoustic Montreal-area duo, specializing in great songs from the 60's to today.  Multi-instrumentalist and vocalists, The Duomatics literally switch it up during the show, as Peter and John switch instruments for more variety and entertainment value. Looking forward to hearing them on the bay!<br>
+									<a href="https://www.facebook.com/TheDuomatics/" target="_blank">The Duomatics Facebook page.</a></p>
+								</div>
+							</div>
+						</div>
+						
+						<hr>
+						<h3>Kristen Prince</h3>
+						<p>Click the arrows on the photo to see more.</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">										
+									<div id="Kristen-Prince" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/entertainment/kristen-prince/KP1.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP2.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP3.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP4.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP5.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP6.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP7.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/entertainment/kristen-prince/KP8.jpg" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button" data-bs-target="#Kristen-Prince" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#Kristen-Prince" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col">
+									<p>Kristen will be returning to Alapalooza with Tom Barlow for the 4th time as his guest saxophone player as well as vocalist. This year we are pleased to feature her as a solo artist as well. She will be playing a few cool sax tunes while the band takes a break. Kristen plays regularly in the Port Credit area with The Dedbeats and Strange Brew as well as solo gigs. She recently played with The Arkells!    <br>
+									<a href="https://www.facebook.com/TheDedbeatsBand/" target="_blank">The Dedbeats Facebook page.</a><br>
+									<a href="https://www.facebook.com/TheStrangeBrewDuo/" target="_blank">The Strange Brew Duo Facebook page.</a><br>
+									<a href="https://www.facebook.com/kponsax/" target="_blank">Kristen Prince's Facebook page.</a></p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div id="page-merchandise" hidden>
+						<h1 id="header-merchandise">Tickets & Merchandise</h1>
+												
+						Tickets to the VIP On-shore Experience will be limited and sold on a first come – first served basis. Anyone who purchased Alapalooza merchandise in the past will be contacted and given first opportunity to buy tickets. 
 						<br>
-							<table border="1" class="w-100">
-								<tr border="0">
-									<td border="0">
-										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALSHIRT" target="_blank"><img src="images/merchandise/Alapalooza_T_TNT_Jun28-2019.jpg" height="256" width="256" class="rounded"></a>
+							<table class="w-100">
+								<tr >
+									<td >
+										<a href="#vip">VIP On-shore Experience:</a>
 									</td>
-									<td border="0">
-										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALHAT" target="_blank"><img src="images/merchandise/Alapalooza_Hat_TNT_Jun28-2019.jpg" height="256" width="256" class="rounded"></a>
-									</td>
-									<td border="0">
-										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALKOOZIE" target="_blank"><img src="images/merchandise/Alapalooza_BeerKoozie_TNT_Jun28-2019_v2.jpg" height="256" width="256" class="rounded"></a><br>
+									<td >
+										$50 per person / 12 & under Free
 									</td>
 								</tr>
-								<tr border="0">
-									<td colspan="3" border="0">
-										<a href="https://orders.tntworld.com/cgi-bin/Xebra?Mixed&s=mihey6bi&group=1&catalogID=321&limitToCustomerItemNumber=ALCOMBO" target="_blank"><img src="images/merchandise/Alapalooza_Combined_TNT_Jul2-2019.jpg" height="256"width="416" class="rounded"></a>
+								<tr >
+									<td >
+										Alapalooza T-shirt:    
+									</td>
+									<td >
+										$25 each    
+									</td>
+								</tr>
+								<tr >
+									<td >
+										Alapalooza Embroidered Baseball Hat:   
+									</td>
+									<td >
+										$15 each    
+									</td>
+								</tr>
+								<tr >
+									<td >
+										Alapalooza Koozie:   
+									</td>
+									<td >
+										$5 each    
 									</td>
 								</tr>
 							</table>
-							<ul>
-								<li><a href="https://orders.tntworld.com/tntworld?fbclid=IwAR1zraaFSgrVrK2SPqLGpUZcx8cMr-7XBNsbmnjkK_HJ9vKvz6iZiXMWK0M" target="_blank">Alapalooza 2019 event T-shirts, Hats & Koozies available (click here or on one of the photos to order)</a></li>
-								<ul>
-									<li>Orders must be placed by Tuesday July 16th.</li>
-									<li>No payment is required online.</li>
-									<li>Please pay in Cash when you pick up or send Al an e-transfer at sledhead99@sympatico.ca.</li>
-									<li>Check out the Alapalooza Combo for the best deal!</li>
-								</ul>
-							</ul>
+							<strong>***Note: please specify size of shirt S, M, L, XL, 2XL, 3XL, 4XL</strong>
+							
+							<p>
+							To order, contact Al by one of the following:<br>
+							Reply to the Facebook Messager invitation (preferred)<br>
+							Email: sledheadal@gmail.com <a href="email:sledheadal@gmail.com">(Click here to start an email)</a><br>
+							Text: 289-259-5992<br>
+							
+							Payment: E-transfer to sledheadal@gmail.com
+							</p>
+							
+							<p class="urgent"><strong>NOTE:  Orders must be received by July 3rd to receive the shirts on time!</strong></p>
+							
+							<h1>Note: Include Pictures of the Logo, front and back, and pictures of the merchandise (if available)</h1>
 					</div>
+					
 					<div id="page-sponsors" hidden>
-						<h1 id="header">Sponsors</h1>
+						<h1 id="header-sponsors">Supporters</h1>
 							<p>Thanks to our sponsors / supporters for helping to make the event possible.</p>
-
-							<a href="https://www.johnbacherconstruction.com/" target="_blank"><img src="https://www.johnbacherconstruction.com/uploads/t6qq1Cy8/691x0_530x0/logo_alt.png" alt="Bacher Construction" height="90" width="330"></a>
-							<a href="http://ravecontracting.ca/" target="_blank"><img src="http://ravecontracting.ca/img/newravelogolargeweb.jpg" alt="Rave Contracting" height="90" width="330"></a>
-							<a href="https://www.tntworld.com/" target="_blank"><img src="56582269_2176683719086061_1214225428248526848_n.png" alt="The Next Trend Design" height="90" width="330"></a>
-							<a href="http://mccombeconsulting.com" target="_blank"><img src="McComb Consulting Logo.png" alt="McComb Consulting" height="111" width="330"></a>
-							<a href="http://www.highlandpackers.com/" target="_blank"><img src="http://www.highlandpackers.com/images/hpllogo.gif" alt="Highland Packers" height="90" width="330"></a>
-							<a href="http://www.wellerpublishing.com/" target="_blank"><img src="Weller.jpg" height="90" width="330" alt="Weller Publishing"></a>
-							<a href="http://www.cleaningcentral.ca/" target="_blank"><img src="Untitled.png" height="90" width="330" alt="Cleaning Central"></a>
+							<table>
+								<tr>
+									<td>
+										<a href="https://www.johnbacherconstruction.com/" target="_blank"><img src="images/sponsors/logo_alt.png" alt="Bacher Construction" height="90" width="330"></a>
+									</td>
+									<td>
+										<a href="http://ravecontracting.ca/" target="_blank"><img src="images/sponsors/Rave.jpg" alt="Rave Contracting" height="90" width="330"></a>
+									</td>
+									<td>
+										<a href="https://www.tntworld.com/" target="_blank"><img src="images/sponsors/TNT.png" alt="The Next Trend Design" height="90" width="330"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.highlandpackers.com/" target="_blank"><img src="images/sponsors/hpllogo.gif" alt="Highland Packers" height="90" width="330"></a>
+									</td>
+									<td>
+										<a href="https://www.axiomaudio.com/" target="_blank"><img src="images/sponsors/Axiom-Audio.jpg" alt="Axiom Audio" height="90" width="330"></a>
+									</td>
+									<td>
+										<a href="https://echelonenvironmental.ca/cds/" target="_blank"><img src="images/sponsors/Echelon-Environmental.jpg" alt="Echelon Environmental" height="90" width="330"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://lakelifeleisure.ca/" target="_blank"><img src="images/sponsors/Lake-Life-Leisure.jpg" alt="Lake Life Leisure" height="90" width="330"></a>
+									</td>
+									<td colspan="2">
+										<a href="http://www.cleaningcentral.ca/" target="_blank"><img src="Untitled.png" height="90" width="330" alt="Cleaning Central"></a>
+									</td>
+								</tr>
+							</table>
+								
 					</div>
-					<div id="page-2018" hidden>
-						<h1 id="header">Last year!</h1>
+					
+					<div id="page-gallery-2018" hidden>
+						<h1 id="header-gallery-2018">Alapalooza 2018</h1>
 						<p>Click the arrows on the photo to see more.</p>						
 						
-						<div id="last-year-gallery" class="carousel slide" data-bs-ride="carousel">
+						<div id="gallery-2018" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img src="images/2018/1.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-1.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/2.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-2.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/3.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-3.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/4.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-4.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/5.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-5.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/6.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-6.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/7.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-7.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/8.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-8.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/9.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-9.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/10.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-10.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/11.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-11.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="images/2018/12.jpg" class="d-block w-100" alt="...">
+									<img src="images/gallery-2018/2018-12.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-13.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-14.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-15.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-16.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-17.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2018/2018-18.jpg" class="d-block w-100" alt="...">
 								</div>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#last-year-gallery" data-bs-slide="prev">
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2018" data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Previous</span>
 							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#last-year-gallery" data-bs-slide="next">
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-2018" data-bs-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Next</span>
 							</button>
 						</div>
 					</div>
-					<div id="page-contact" hidden>
-						<h1 id="header">Contact</h1>				
+					
+					<div id="page-gallery-2019" hidden>
+						<h1 id="header-gallery-2019">Alapalooza 2019</h1>
+						<p>Click the arrows on the photo to see more.</p>						
 						
-				<h3>Als' E-mail: sledhead99@sympatico.ca</h3>
-				<h3>Kyle's E-mail: kyle.g.s.james@gmail.com</h3>
+						<div id="gallery-2019" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/gallery-2019/2019-1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-2.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-3.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-4.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-5.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-6.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-7.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-8.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-9.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-12.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-13.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-14.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-15.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-16.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-17.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-18.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-19.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-20.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-21.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-22.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-23.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-24.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-25.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-26.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-27.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-28.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-29.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-30.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-31.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-32.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-33.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-34.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-35.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-36.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-37.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-38.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-39.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-40.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-41.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-42.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-43.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-44.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-45.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-46.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-47.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-48.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-49.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-50.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-51.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-52.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2019/2019-53.jpg" class="d-block w-100" alt="...">
+								</div>
+
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2019" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-2019" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
 					</div>
+					
+					<div id="page-gallery-2021" hidden>
+						<h1 id="header-gallery-2021">Alapalooza 2021</h1>
+						<p>Click the arrows on the photo to see more.</p>						
+						
+						<div id="gallery-2021" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/gallery-2021/2021-1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-2.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-3.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-4.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-5.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-6.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-7.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-8.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-9.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-12.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-13.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-14.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-15.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-16.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-17.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-18.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-19.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-20.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-21.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-22.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-23.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-24.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-25.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-26.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-27.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-28.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-29.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-30.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-31.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-32.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-33.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/gallery-2021/2021-34.jpg" class="d-block w-100" alt="...">
+								</div>
+
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2021" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-2021" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					
+					<div id="page-contact" hidden>
+						<h1 id="header-contact">Contact</h1>				
+						
+						<pre>
+						For Alapalooza information:
+							Facebook Messenger:		Al Fletcher
+							Email:					Sledheadal@gmail.com <a href="mailto:sledheadal@gmail.com">(Click here to start email)</a>
+							Text:					289-259-5992
+						
+						For Website issues:
+							Email:               	kyle.g.s.james@gmail.com
+						</pre>
+					</div>
+					
 				</div>
 			</main>
 			<footer>
-				<h6>Website made by &copy;<a href="http://kulalolk.pw/">Kyle James</a>, 2019</h6>
+				<hr><br>
+				<h6>Website made by &copy;<a href="http://github.com/kyle-james">Kyle James</a>, 2022</h6>
 			</footer>
 		</div>
 	</body>
