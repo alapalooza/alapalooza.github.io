@@ -177,61 +177,76 @@ function checkUrlAndLoadCorrespondingDisplay() {
 
 function toggleGalleryTextTBB() {
 	var selected_element = document.getElementById("gallery-info-tbb");
+	var selected_element2 = document.getElementById("gallery-title-tbb");
 	
 	if(is_tbb_text_hidden) {
 		selected_element.removeAttribute("hidden");
+		selected_element2.removeAttribute("hidden");
 		is_tbb_text_hidden = false;
 	}
 	else if(!is_tbb_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
+		selected_element2.setAttribute("hidden", "hidden");
 		is_tbb_text_hidden = true;
 	}
 }
 function toggleGalleryTextCOTH() {
 	var selected_element = document.getElementById("gallery-info-coth");
+	var selected_element2 = document.getElementById("gallery-title-coth");
 	
 	if(is_coth_text_hidden) {
 		selected_element.removeAttribute("hidden");
+		selected_element2.removeAttribute("hidden");
 		is_coth_text_hidden = false;
 	}
 	else if(!is_coth_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
+		selected_element2.setAttribute("hidden", "hidden");
 		is_coth_text_hidden = true;
 	}
 }
 function toggleGalleryTextTMF() {
 	var selected_element = document.getElementById("gallery-info-tmf");
+	var selected_element2 = document.getElementById("gallery-title-tmf");
 	
 	if(is_tmf_text_hidden) {
 		selected_element.removeAttribute("hidden");
+		selected_element2.removeAttribute("hidden");
 		is_tmf_text_hidden = false;
 	}
 	else if(!is_tmf_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
+		selected_element2.setAttribute("hidden", "hidden");
 		is_tmf_text_hidden = true;
 	}
 }
 function toggleGalleryTextTD() {
 	var selected_element = document.getElementById("gallery-info-td");
+	var selected_element2 = document.getElementById("gallery-title-td");
 	
 	if(is_td_text_hidden) {
 		selected_element.removeAttribute("hidden");
+		selected_element2.removeAttribute("hidden");
 		is_td_text_hidden = false;
 	}
 	else if(!is_td_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
+		selected_element2.setAttribute("hidden", "hidden");
 		is_td_text_hidden = true;
 	}
 }
 function toggleGalleryTextKP() {
 	var selected_element = document.getElementById("gallery-info-kp");
+	var selected_element2 = document.getElementById("gallery-title-kp");
 	
 	if(is_kp_text_hidden) {
 		selected_element.removeAttribute("hidden");
+		selected_element2.removeAttribute("hidden");
 		is_kp_text_hidden = false;
 	}
 	else if(!is_kp_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
+		selected_element2.setAttribute("hidden", "hidden");
 		is_kp_text_hidden = true;
 	}
 }
