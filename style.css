@@ -1,4 +1,11 @@
 @media (max-width: 800px) {
+	div.poster {
+		background-image: url('images/alapalooza_2022_poster.jpg');
+		background-repeat: false;
+		background-size: 93vw;
+		width: 93vw;
+		height: 121vw;
+	}
 	div.page-text {
 		width: 100%;
 	}
@@ -387,6 +394,13 @@
 }
 
 @media (min-width: 801px) {
+	div.poster {
+		background-image: url('images/alapalooza_2022_poster.jpg');
+		background-repeat: false;
+		background-size: 67vw;
+		width: 67vw;
+		height: 87vw;
+	}
 	div.page-text {
 		width: 50%;
 		float:left;
@@ -809,6 +823,4 @@ p.band-info {
 	background-color: rgba(0,0,0,0.5);
 }
 
-div.page-index {
-	background-image: url("images/alapalooza_2022_poster.jpg");
-}
+
