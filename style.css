@@ -36,6 +36,15 @@ td {
 	border: 1px solid black;
 }
 
+div.mobile-gallery {
+	width: 100%;
+	background-color: yellow;
+}
+
+div.desktop-gallery {
+	background-color: cyan;
+}
+
 
 /* CAROUSEL SYUFF */
 
