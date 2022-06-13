@@ -162,7 +162,7 @@
 	
 
     z-index: 3; /* To appear above the slides */
-    margin-top: 19rem;
+    margin-top: 20rem;
     margin-right: 1rem;
 	margin-left: 1rem;
 	margin-bottom: 1rem;
@@ -293,7 +293,7 @@
 	
 
     z-index: 3; /* To appear above the slides */
-    margin-top: 18rem;
+    margin-top: 21rem;
     margin-right: 1rem;
 	margin-left: 1rem;
 	margin-bottom: 1rem;
@@ -357,7 +357,7 @@
 	
 
     z-index: 3; /* To appear above the slides */
-    margin-top: 18rem;
+    margin-top: 22rem;
     margin-right: 1rem;
 	margin-left: 1rem;
 	margin-bottom: 1rem;
@@ -807,4 +807,8 @@ p.band-info {
 	font-size: 0.8vw;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
+}
+
+div.page-index {
+	background-image: url("images/alapalooza_2022_poster.jpg");
 }

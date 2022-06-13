@@ -8,7 +8,7 @@ var is_tmf_text_hidden = false;
 var is_td_text_hidden = false;
 var is_kp_text_hidden = false;
 
-function hideAllPages() {	
+function hideAllPages() {
 	var page_index = document.getElementById("page-index");
 	page_index.setAttribute("hidden", "hidden");
 	
@@ -46,13 +46,17 @@ function displayIndex() {
 	document.title = WEBSITE_NAME;
 	var current_page = document.getElementById("page-index");
 	current_page.removeAttribute("hidden"); 
+	
+
 }
 
 function displayHome() {
 	hideAllPages();
 	document.title = WEBSITE_NAME + " - Home";
 	var current_page = document.getElementById("page-home");
-	current_page.removeAttribute("hidden"); 
+	current_page.removeAttribute("hidden");
+
+
 }
 
 function displayEventDetails() {
@@ -60,6 +64,7 @@ function displayEventDetails() {
 	document.title = WEBSITE_NAME + " - Event Details";
 	var current_page = document.getElementById("page-event-details");
 	current_page.removeAttribute("hidden"); 
+
 }
 
 function displayVip() {
@@ -67,6 +72,7 @@ function displayVip() {
 	document.title = WEBSITE_NAME + " - VIP On-shore Experience";
 	var current_page = document.getElementById("page-vip");
 	current_page.removeAttribute("hidden"); 
+		
 }
 
 function displayEntertainment() {
