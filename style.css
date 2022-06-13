@@ -1,35 +1,64 @@
+@media (max-width: 600px) {
+	div.page-text {
+		width: 100%;
+	}
+	div.gallery-carousel {
+		width:100%;
+	}
+	
+	img.merch-image {
+		width: 100%;
+	}
+	li.item {
+		font-size: 1.2em;
+	}
+	
+	h2.center-text {
+		text-align: center;
+	}
+	
+}
 
+@media (min-width: 601px) {
+	div.page-text {
+		width: 50%;
+		float:left;
+	}
+	div.gallery-carousel {
+		width:50%;
+		float:right;
+	}
+	
+	img.merch-image {
+		width: 50%;
+		float: right;
+	}
+	
+	li.item {
+		font-size: 1.5em;
+	}
+	
+	h2.center-text {
+		text-align: center;
+	}
+}
 	
 p.urgent {
 	font-size: 2em;
 }
 
 
-li.item {
-	font-size: 1.5em;
 
-}
 
 p.note {
 	font-size: 1.5em;
 }
 
-img.merch-image {
-	width: 50%;
-	float: right;
-}
 
-h2.center-text {
-	text-align: center;
-}
 
-div.desktop-gallery {
-	width:50%;float:right;height:100%;
-}
 
-div.page-text {
-	width:50%;float:left;height:100%;
-}
+
+
 
 td {
 	font-size: 1.5em;
@@ -50,6 +79,8 @@ div.desktop-gallery {
 
 a.hide-carousel-text {
 	color: white;
+	position: absolute;
+	font-size: 0.8em;
 }
 
 a.carosel-link {
