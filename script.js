@@ -1,6 +1,12 @@
-const WEBSITE_NAME = "Alapalooza 2019";
+const WEBSITE_NAME = "Alapalooza 2022";
 
 const INDEX_HTML_PATH = "file:///D:/Dev/alapalooza/index.html"
+
+var is_tbb_text_hidden = false;
+var is_coth_text_hidden = false;
+var is_tmf_text_hidden = false;
+var is_td_text_hidden = false;
+var is_kp_text_hidden = false;
 
 function hideAllPages() {	
 	var page_index = document.getElementById("page-index");
@@ -29,6 +35,9 @@ function hideAllPages() {
 	
 	var page_gallery2021 = document.getElementById("page-gallery-2021");
 	page_gallery2021.setAttribute("hidden", "hidden"); 
+	
+	var page_contact = document.getElementById("page-contact");
+	page_contact.setAttribute("hidden", "hidden");
 
 }
 
@@ -163,5 +172,66 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	}
 	else {
 		displayError();
+	}
+}
+
+function toggleGalleryTextTBB() {
+	var selected_element = document.getElementById("gallery-info-tbb");
+	
+	if(is_tbb_text_hidden) {
+		selected_element.removeAttribute("hidden");
+		is_tbb_text_hidden = false;
+	}
+	else if(!is_tbb_text_hidden) {
+		selected_element.setAttribute("hidden", "hidden");
+		is_tbb_text_hidden = true;
+	}
+}
+function toggleGalleryTextCOTH() {
+	var selected_element = document.getElementById("gallery-info-coth");
+	
+	if(is_coth_text_hidden) {
+		selected_element.removeAttribute("hidden");
+		is_coth_text_hidden = false;
+	}
+	else if(!is_coth_text_hidden) {
+		selected_element.setAttribute("hidden", "hidden");
+		is_coth_text_hidden = true;
+	}
+}
+function toggleGalleryTextTMF() {
+	var selected_element = document.getElementById("gallery-info-tmf");
+	
+	if(is_tmf_text_hidden) {
+		selected_element.removeAttribute("hidden");
+		is_tmf_text_hidden = false;
+	}
+	else if(!is_tmf_text_hidden) {
+		selected_element.setAttribute("hidden", "hidden");
+		is_tmf_text_hidden = true;
+	}
+}
+function toggleGalleryTextTD() {
+	var selected_element = document.getElementById("gallery-info-td");
+	
+	if(is_td_text_hidden) {
+		selected_element.removeAttribute("hidden");
+		is_td_text_hidden = false;
+	}
+	else if(!is_td_text_hidden) {
+		selected_element.setAttribute("hidden", "hidden");
+		is_td_text_hidden = true;
+	}
+}
+function toggleGalleryTextKP() {
+	var selected_element = document.getElementById("gallery-info-kp");
+	
+	if(is_kp_text_hidden) {
+		selected_element.removeAttribute("hidden");
+		is_kp_text_hidden = false;
+	}
+	else if(!is_kp_text_hidden) {
+		selected_element.setAttribute("hidden", "hidden");
+		is_kp_text_hidden = true;
 	}
 }

@@ -1,11 +1,403 @@
-h2.center-text {
-	text-align:centre;
-	}
+
 	
 p.urgent {
 	font-size: 2em;
 }
 
-div#TomBarlowBand {
-	height: fixed;
+
+li.item {
+	font-size: 1.5em;
+
 }
+
+p.note {
+	font-size: 1.5em;
+}
+
+img.merch-image {
+	width: 50%;
+	float: right;
+}
+
+h2.center-text {
+	text-align: center;
+}
+
+div.desktop-gallery {
+	width:50%;float:right;height:100%;
+}
+
+div.page-text {
+	width:50%;float:left;height:100%;
+}
+
+td {
+	font-size: 1.5em;
+	border: 1px solid black;
+}
+
+
+/* CAROUSEL SYUFF */
+
+a.hide-carousel-text {
+	color: white;
+}
+
+a.carosel-link {
+	background-color: white;
+}
+
+
+h2.band-name {
+	font-size: 2vw;
+	color:white;
+}
+
+p.band-info {
+	font-size: 0.8vw;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#gallery-event-details .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-event-details .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+#gallery-vip .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-vip .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+ /* TOM BARLOW BAND */
+ 
+#gallery-tbb .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-tbb .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#gallery-tbb.carousel h2.band-name {
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+#gallery-tbb.carousel p.band-info {
+    position: relative;
+	float:right;
+	width:50%;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-right: 3rem;
+	text-align: right;
+}
+  
+#gallery-tbb.carousel a.hide-carousel-text{
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-right: 3rem;
+	text-align: right;
+  }
+
+#gallery-tbb.carousel-item h3 {
+    position: absolute;
+    margin-top: 10rem; /* Adjust here the space from top */
+    margin-left: 3rem;  /* Adjust here the space from left */
+    z-index: 2; /* To appear above the image */
+  }
+#gallery-tbb.carousel-item img {
+    position: absolute;
+    z-index: 1; /* To appear below the h3 */
+}
+
+
+/* COMPLIMENTDS OF THE GOUSE */
+
+#gallery-coth .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-coth .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#gallery-coth.carousel h2.band-name {
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+#gallery-coth.carousel p.band-info {
+    position: relative;
+	float:right;
+	width:50%;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-right: 3rem;
+	text-align: right;
+}
+  
+#gallery-coth.carousel a.hide-carousel-text{
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-right: 3rem;
+	text-align: right;
+  }
+
+#gallery-coth.carousel-item h3 {
+    position: absolute;
+    margin-top: 10rem; /* Adjust here the space from top */
+    margin-left: 3rem;  /* Adjust here the space from left */
+    z-index: 2; /* To appear above the image */
+  }
+#gallery-coth.carousel-item img {
+    position: absolute;
+    z-index: 1; /* To appear below the h3 */
+}
+
+
+/* THE MIGHT FISH */
+
+#gallery-tmf .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-tmf .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#gallery-tmf.carousel h2.band-name {
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+#gallery-tmf.carousel p.band-info {
+    position: relative;
+	float:right;
+	width:50%;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-right: 3rem;
+	text-align: right;
+}
+  
+#gallery-tmf.carousel a.hide-carousel-text{
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-right: 3rem;
+	text-align: right;
+  }
+
+#gallery-tmf.carousel-item h3 {
+    position: absolute;
+    margin-top: 10rem; /* Adjust here the space from top */
+    margin-left: 3rem;  /* Adjust here the space from left */
+    z-index: 2; /* To appear above the image */
+  }
+#gallery-tmf.carousel-item img {
+    position: absolute;
+    z-index: 1; /* To appear below the h3 */
+}
+
+  
+  
+  /* THE DUOMATICS */
+
+#gallery-td .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:80vh;
+}
+
+#gallery-td .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#gallery-td.carousel h2.band-name {
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+#gallery-td.carousel p.band-info {
+    position: relative;
+	float:right;
+	width:50%;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-right: 3rem;
+	text-align: right;
+}
+  
+#gallery-td.carousel a.hide-carousel-text{
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-right: 3rem;
+	text-align: right;
+  }
+
+#gallery-td.carousel-item h3 {
+    position: absolute;
+    margin-top: 10rem; /* Adjust here the space from top */
+    margin-left: 3rem;  /* Adjust here the space from left */
+    z-index: 2; /* To appear above the image */
+  }
+#gallery-td.carousel-item img {
+    position: absolute;
+    z-index: 1; /* To appear below the h3 */
+}
+
+
+  /* Kristen Prince */
+
+#gallery-kp .carousel-item img {  
+  object-fit: cover;
+  object-position: top;
+  height:80vh;
+}
+
+#gallery-kp .carousel-item:before {
+  content: "";
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent, rgba(0,0,0,0.5)
+    );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#gallery-kp.carousel h2.band-name {
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+#gallery-kp.carousel p.band-info {
+    position: relative;
+	float:right;
+	width:50%;
+    z-index: 3; /* To appear above the slides */
+    margin-top: 3rem;
+    margin-right: 3rem;
+	text-align: right;
+}
+  
+#gallery-kp.carousel a.hide-carousel-text{
+    position: absolute;
+    z-index: 3; /* To appear above the slides */
+    margin-right: 3rem;
+	text-align: right;
+  }
+
+#gallery-kp.carousel-item h3 {
+    position: absolute;
+    margin-top: 10rem; /* Adjust here the space from top */
+    margin-left: 3rem;  /* Adjust here the space from left */
+    z-index: 2; /* To appear above the image */
+  }
+#gallery-kp.carousel-item img {
+    position: absolute;
+    z-index: 1; /* To appear below the h3 */
+}
+
