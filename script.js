@@ -218,9 +218,15 @@ function displayMerchandise() {
 	current_page.removeAttribute("hidden"); 
 	
 	
-	var image1 = document.getElementById('merch-image1');
+	var image1 = document.getElementById('image-merch1');
+	var image2 = document.getElementById('image-merch2');
+	var image3 = document.getElementById('image-merch3');
+	var image4 = document.getElementById('image-merch4');
 	
-	image1.setAttribute("src", "images/merchandise/Alapalooza-2022-Logo.png");
+	image1.setAttribute("src", "images/merchandise/Alapalooza-Logo-Front.jpg");
+	image2.setAttribute("src", "images/merchandise/Alapalooza-Logo-Back.jpg");
+	image3.setAttribute("src", "images/merchandise/Alapalooza_Koozie_TNT_Mockup_June14-2022.jpg");
+	image4.setAttribute("src", "images/merchandise/Alapalooza_T_TNT_Mockup_June14-2022.jpg");
 
 }
 
@@ -427,7 +433,7 @@ function displayGallery2021() {
 	current_page.removeAttribute("hidden"); 
 	
 	var image1 = document.getElementById('image-2021-gallery1');
-	var image4 = document.getElementById('image-2021-gallery2');
+	var image2 = document.getElementById('image-2021-gallery2');
 	var image3 = document.getElementById('image-2021-gallery3');
 	var image4 = document.getElementById('image-2021-gallery4');
 	var image5 = document.getElementById('image-2021-gallery5');
@@ -462,7 +468,7 @@ function displayGallery2021() {
 	var image34 = document.getElementById('image-2021-gallery34');
 	
 	image1.setAttribute("src", "images/gallery-2021/2021-1.jpg");
-	image4.setAttribute("src", "images/gallery-2021/2021-2.jpg");
+	image2.setAttribute("src", "images/gallery-2021/2021-2.jpg");
 	image3.setAttribute("src", "images/gallery-2021/2021-3.jpg");
 	image4.setAttribute("src", "images/gallery-2021/2021-4.jpg");
 	image5.setAttribute("src", "images/gallery-2021/2021-5.jpg");

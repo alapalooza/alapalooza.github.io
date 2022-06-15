@@ -25,7 +25,7 @@
 	}
 	
 	#gallery-event-details .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -46,7 +46,7 @@
 }
 
 #gallery-vip .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -70,7 +70,7 @@
  /* TOM BARLOW BAND */
  
 #gallery-tbb .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -135,7 +135,7 @@
 /* COMPLIMENTDS OF THE GOUSE */
 
 #gallery-coth .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -200,7 +200,7 @@
 /* THE MIGHT FISH */
 
 #gallery-tmf .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -266,7 +266,7 @@
   /* THE DUOMATICS */
 
 #gallery-td .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -331,7 +331,7 @@
   /* Kristen Prince */
 
 #gallery-kp .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   height:80vh;
 }
@@ -397,9 +397,10 @@
 	div.poster {
 		background-image: url('images/alapalooza_2022_poster.jpg');
 		background-repeat: false;
-		background-size: 67vw;
-		width: 67vw;
-		height: 87vw;
+		background-size: 31vw;
+		width: 31vw;
+		height: 40.3vw;
+		margin-left:15vw;
 	}
 	div.page-text {
 		width: 50%;
@@ -424,7 +425,7 @@
 	}
 	
 	#gallery-event-details .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -445,7 +446,7 @@
 }
 
 #gallery-vip .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -469,7 +470,7 @@
  /* TOM BARLOW BAND */
  
 #gallery-tbb .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -529,8 +530,8 @@
 /* COMPLIMENTDS OF THE GOUSE */
 
 #gallery-coth .carousel-item img {  
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: top;
   overflow: hidden;
   height:80vh;
 }
@@ -589,7 +590,7 @@
 /* THE MIGHT FISH */
 
 #gallery-tmf .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -650,7 +651,7 @@
   /* THE DUOMATICS */
 
 #gallery-td .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
@@ -710,7 +711,7 @@
   /* Kristen Prince */
 
 #gallery-kp .carousel-item img {  
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   height:80vh;
 }
@@ -814,7 +815,9 @@ a.carosel-link {
 
 h2.band-name {
 	font-size: 2vw;
-	color:white;
+	background-color: rgba(0,0,0,0.5);
+	color:white
+	
 }
 
 p.band-info {
@@ -823,4 +826,9 @@ p.band-info {
 	background-color: rgba(0,0,0,0.5);
 }
 
+
+a.hide-carousel-text {
+		color: white;
+	background-color: rgba(0,0,0,0.5);
+}
 
