@@ -521,19 +521,25 @@ function displayError() {
 }
 
 function checkUrlAndLoadCorrespondingDisplay() {
-	if(window.location.href == INDEX_HTML_PATH + "#home" || window.location.href == "https://alapalooza.github.io/#home" || window.location.href == "domain.com#home") {
+	
+	var urlParams = new URLSearchParams(window.location.search);
+	
+	if(urlParams.has('fbclid')) {
+		window.location = "https://alapalooza.github.io";
+	}
+	else if(window.location.href == INDEX_HTML_PATH + "#home" || window.location.href == "https://alapalooza.github.io/#home") {
 		displayHome();
 	}
-	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://alapalooza.github.io/" || window.location.href == "domain.com") {
+	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://alapalooza.github.io/") {
 		displayIndex();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#event-details" || window.location.href == "https://alapalooza.github.io/#event-details" || window.location.href == "domain.com#event-details") {
+	else if(window.location.href == INDEX_HTML_PATH + "#event-details" || window.location.href == "https://alapalooza.github.io/#event-details") {
 		displayEventDetails();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#vip" || window.location.href == "https://alapalooza.github.io/#vip" || window.location.href == "domain.com#vip") {
+	else if(window.location.href == INDEX_HTML_PATH + "#vip" || window.location.href == "https://alapalooza.github.io/#vip") {
 		displayVip();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#entertainment" || window.location.href == "https://alapalooza.github.io/#entertainment" || window.location.href == "domain.com#entertainment") {
+	else if(window.location.href == INDEX_HTML_PATH + "#entertainment" || window.location.href == "https://alapalooza.github.io/#entertainment") {
 		displayEntertainment();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#merchandise" || window.location.href == "https://alapalooza.github.io/#merchandise" || window.location.href == "domain.com#merchandise") {
