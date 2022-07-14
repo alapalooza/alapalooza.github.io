@@ -38,6 +38,9 @@ function hideAllPages() {
 	
 	var page_contact = document.getElementById("page-contact");
 	page_contact.setAttribute("hidden", "hidden");
+	
+	var nav_menu = document.getElementById("navbar-button");
+	nav_menu.setAttribute("class", "collapsed");
 
 }
 
@@ -55,8 +58,7 @@ function displayHome() {
 	document.title = WEBSITE_NAME + " - Home";
 	var current_page = document.getElementById("page-home");
 	current_page.removeAttribute("hidden");
-
-
+	
 }
 
 function displayEventDetails() {
