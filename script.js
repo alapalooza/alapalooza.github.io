@@ -279,8 +279,8 @@ function displaySponsors() {
 	image6.setAttribute("src", "images/sponsors/Echelon-Environmental.jpg");
 	image7.setAttribute("src", "images/sponsors/Lake-Life-Leisure.jpg");
 	image8.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
-	image9.setAttribute("src", "images/sponsors/Fling.jpg");
-	image10.setAttribute("src", "images/sponsors/McComb-Consulting.png");
+	image9.setAttribute("src", "images/sponsors/fling.jpg");
+	image10.setAttribute("src", "images/sponsors/mccomb.png");
 }
 
 function displayGallery() {
@@ -601,7 +601,6 @@ function displayGallery2022() {
 	var image62 = document.getElementById('image-2022-gallery62');
 	var image63 = document.getElementById('image-2022-gallery63');
 	
-	
 	image1.setAttribute("src", "images/gallery-2022/2022-1.jpg");
 	image2.setAttribute("src", "images/gallery-2022/2022-2.jpg");
 	image3.setAttribute("src", "images/gallery-2022/2022-3.jpg");
@@ -713,13 +712,16 @@ function checkUrlAndLoadCorrespondingDisplay() {
 		displaySponsors();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2018" || window.location.href == "https://alapalooza.github.io/#gallery-2018" || window.location.href == "domain.com#gallery-2018"){
-		displayGallery5018();
+		displayGallery2018();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2019" || window.location.href == "https://alapalooza.github.io/#gallery-2019" || window.location.href == "domain.com#gallery-2019"){
-		displayGallery5019();
+		displayGallery2019();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2021" || window.location.href == "https://alapalooza.github.io/#gallery-2021" || window.location.href == "domain.com#gallery-2021"){
-		displayGallery5021();
+		displayGallery2021();
+	}
+	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2022" || window.location.href == "https://alapalooza.github.io/#gallery-2022" || window.location.href == "domain.com#gallery-2022"){
+		displayGallery2022();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#contact" || window.location.href == "https://alapalooza.github.io/#contact" || window.location.href == "domain.com#contact") {
 		displayContact();
@@ -729,7 +731,7 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	}
 }
 
-function toggleGalleryTextTBB() {
+function toggleGalleryTextDW() {
 	var selected_element = document.getElementById("gallery-info-dw");
 	var selected_element2 = document.getElementById("gallery-title-dw");
 	
