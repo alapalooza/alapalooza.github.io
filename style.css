@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
 	div.poster {
-		background-image: url('images/alapalooza_2022_poster.jpg');
+		background-image: url('images/poster.jpg');
 		background-repeat: false;
 		background-size: 93vw;
 		width: 93vw;
@@ -69,14 +69,14 @@
 
 	/* TOM BARLOW BAND */
 	 
-	#gallery-tbb .carousel-item img {  
+	#gallery-dw .carousel-item img {  
 		object-fit: contain;
 		object-position: center;
 		overflow: hidden;
 		height:80vh;
 	}
 
-	#gallery-tbb .carousel-item:before {
+	#gallery-dw .carousel-item:before {
 		content: "";
 		background-image:
 			linear-gradient(
@@ -90,7 +90,7 @@
 		height: 80vh;
 	}
 
-	#gallery-tbb.carousel h2.band-name {
+	#gallery-dw.carousel h2.band-name {
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-top: 1rem;
@@ -98,7 +98,7 @@
 		font-size: 2rem;
 	}
 	  
-	#gallery-tbb.carousel p.band-info {
+	#gallery-dw.carousel p.band-info {
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-top: 18rem;
@@ -110,35 +110,35 @@
 		text-align: right;
 	}
 	  
-	#gallery-tbb.carousel a.hide-carousel-text{
+	#gallery-dw.carousel a.hide-carousel-text{
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-right: 3rem;
 		text-align: right;
 	}
 
-	#gallery-tbb.carousel-item h3 {
+	#gallery-dw.carousel-item h3 {
 		position: absolute;
 		margin-top: 10rem; /* Adjust here the space from top */
 		margin-left: 3rem;  /* Adjust here the space from left */
 		z-index: 2; /* To appear above the image */
 	}
 	
-	#gallery-tbb.carousel-item img {
+	#gallery-dw.carousel-item img {
 		position: absolute;
 		z-index: 1; /* To appear below the h3 */
 	}
 
-	/* COMPLIMENTDS OF THE GOUSE */
+	/* FiddleStix */
 
-	#gallery-coth .carousel-item img {  
+	#gallery-fs .carousel-item img {  
 		object-fit: contain;
 		object-position: center;
 		overflow: hidden;
 		height:80vh;
 	}
 
-	#gallery-coth .carousel-item:before {
+	#gallery-fs .carousel-item:before {
 		content: "";
 		background-image:
 			linear-gradient(
@@ -152,7 +152,7 @@
 		height: 80vh;
 	}
 
-	#gallery-coth.carousel h2.band-name {
+	#gallery-fs.carousel h2.band-name {
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-top: 1rem;
@@ -160,7 +160,7 @@
 		font-size: 2rem;
 	}
 	  
-	#gallery-coth.carousel p.band-info {
+	#gallery-fs.carousel p.band-info {
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-top: 20rem;
@@ -172,21 +172,21 @@
 		text-align: right;
 	}
 	  
-	#gallery-coth.carousel a.hide-carousel-text{
+	#gallery-fs.carousel a.hide-carousel-text{
 		position: absolute;
 		z-index: 3; /* To appear above the slides */
 		margin-right: 3rem;
 		text-align: right;
 	}
 	  
-	#gallery-coth.carousel-item h3 {
+	#gallery-fs.carousel-item h3 {
 		position: absolute;
 		margin-top: 10rem; /* Adjust here the space from top */
 		margin-left: 3rem;  /* Adjust here the space from left */
 		z-index: 2; /* To appear above the image */
 	}
 	
-	#gallery-coth.carousel-item img {
+	#gallery-fs.carousel-item img {
 		position: absolute;
 		z-index: 1; /* To appear below the h3 */
 	}
@@ -389,7 +389,7 @@
 
 @media (min-width: 801px) {
 	div.poster {
-		background-image: url('images/alapalooza_2022_poster.jpg');
+		background-image: url('images/poster.jpg');
 		background-repeat: false;
 		background-size: 31vw;
 		width: 31vw;
@@ -482,16 +482,16 @@
 	}
 
 
- /* TOM BARLOW BAND */
+ /* Dylan Wallace */
  
-#gallery-tbb .carousel-item img {  
+#gallery-dw .carousel-item img {  
   object-fit: contain;
   object-position: center;
   overflow: hidden;
   height:80vh;
 }
 
-#gallery-tbb .carousel-item:before {
+#gallery-dw .carousel-item:before {
   content: "";
   background-image:
     linear-gradient(
@@ -506,14 +506,14 @@
 }
 
 
-#gallery-tbb.carousel h2.band-name {
+#gallery-dw.carousel h2.band-name {
     position: absolute;
     z-index: 3; /* To appear above the slides */
     margin-top: 3rem;
     margin-left: 3em;
   }
   
-#gallery-tbb.carousel p.band-info {
+#gallery-dw.carousel p.band-info {
     position: relative;
 	float:right;
 	width:50%;
@@ -523,20 +523,20 @@
 	text-align: right;
 }
   
-#gallery-tbb.carousel a.hide-carousel-text{
+#gallery-dw.carousel a.hide-carousel-text{
     position: absolute;
     z-index: 3; /* To appear above the slides */
     margin-right: 3rem;
 	text-align: right;
   }
 
-#gallery-tbb.carousel-item h3 {
+#gallery-dw.carousel-item h3 {
     position: absolute;
     margin-top: 10rem; /* Adjust here the space from top */
     margin-left: 3rem;  /* Adjust here the space from left */
     z-index: 2; /* To appear above the image */
   }
-#gallery-tbb.carousel-item img {
+#gallery-dw.carousel-item img {
     position: absolute;
     z-index: 1; /* To appear below the h3 */
 }
@@ -544,14 +544,14 @@
 
 /* COMPLIMENTDS OF THE GOUSE */
 
-#gallery-coth .carousel-item img {  
+#gallery-fs .carousel-item img {  
   object-fit: contain;
   object-position: top;
   overflow: hidden;
   height:80vh;
 }
 
-#gallery-coth .carousel-item:before {
+#gallery-fs .carousel-item:before {
   content: "";
   background-image:
     linear-gradient(
@@ -566,14 +566,14 @@
 }
 
 
-#gallery-coth.carousel h2.band-name {
+#gallery-fs.carousel h2.band-name {
     position: absolute;
     z-index: 3; /* To appear above the slides */
     margin-top: 3rem;
     margin-left: 3rem;
   }
   
-#gallery-coth.carousel p.band-info {
+#gallery-fs.carousel p.band-info {
     position: relative;
 	float:right;
 	width:50%;
@@ -583,20 +583,20 @@
 	text-align: right;
 }
   
-#gallery-coth.carousel a.hide-carousel-text{
+#gallery-fs.carousel a.hide-carousel-text{
     position: absolute;
     z-index: 3; /* To appear above the slides */
     margin-right: 3rem;
 	text-align: right;
   }
 
-#gallery-coth.carousel-item h3 {
+#gallery-fs.carousel-item h3 {
     position: absolute;
     margin-top: 10rem; /* Adjust here the space from top */
     margin-left: 3rem;  /* Adjust here the space from left */
     z-index: 2; /* To appear above the image */
   }
-#gallery-coth.carousel-item img {
+#gallery-fs.carousel-item img {
     position: absolute;
     z-index: 1; /* To appear below the h3 */
 }

@@ -2,8 +2,8 @@ const WEBSITE_NAME = "Alapalooza 2022";
 
 const INDEX_HTML_PATH = "file:///D:/Dev/alapalooza/index.html"
 
-var is_tbb_text_hidden = false;
-var is_coth_text_hidden = false;
+var is_dw_text_hidden = false;
+var is_fs_text_hidden = false;
 var is_tmf_text_hidden = false;
 var is_td_text_hidden = false;
 var is_kp_text_hidden = false;
@@ -34,7 +34,10 @@ function hideAllPages() {
 	page_gallery2019.setAttribute("hidden", "hidden"); 
 	
 	var page_gallery2021 = document.getElementById("page-gallery-2021");
-	page_gallery2021.setAttribute("hidden", "hidden"); 
+	page_gallery2021.setAttribute("hidden", "hidden"); 	
+	
+	var page_gallery2022 = document.getElementById("page-gallery-2022");
+	page_gallery2022.setAttribute("hidden", "hidden"); 
 	
 	var page_contact = document.getElementById("page-contact");
 	page_contact.setAttribute("hidden", "hidden");
@@ -49,8 +52,6 @@ function displayIndex() {
 	document.title = WEBSITE_NAME;
 	var current_page = document.getElementById("page-index");
 	current_page.removeAttribute("hidden"); 
-	
-
 }
 
 function displayHome() {
@@ -58,7 +59,6 @@ function displayHome() {
 	document.title = WEBSITE_NAME + " - Home";
 	var current_page = document.getElementById("page-home");
 	current_page.removeAttribute("hidden");
-	
 }
 
 function displayEventDetails() {
@@ -75,6 +75,16 @@ function displayEventDetails() {
 	var image6 = document.getElementById('image-event-details6');
 	var image7 = document.getElementById('image-event-details7');
 	var image8 = document.getElementById('image-event-details8');
+	var image9 = document.getElementById('image-event-details9');
+	var image10 = document.getElementById('image-event-details10');
+	var image11 = document.getElementById('image-event-details11');
+	var image12 = document.getElementById('image-event-details12');
+	var image13 = document.getElementById('image-event-details13');
+	var image14 = document.getElementById('image-event-details14');
+	var image15 = document.getElementById('image-event-details15');
+	var image16 = document.getElementById('image-event-details16');
+	var image17 = document.getElementById('image-event-details17');
+	var image18 = document.getElementById('image-event-details18');
 	
 	image1.setAttribute("src", "images/event-details/Lake1.jpg");
 	image2.setAttribute("src", "images/event-details/Lake2.jpg");
@@ -84,6 +94,16 @@ function displayEventDetails() {
 	image6.setAttribute("src", "images/event-details/Lake6.jpg");
 	image7.setAttribute("src", "images/event-details/Lake7.jpg");
 	image8.setAttribute("src", "images/event-details/Lake8.jpg");
+	image9.setAttribute("src", "images/event-details/Lake9.jpg");
+	image10.setAttribute("src", "images/event-details/Lake10.jpg");
+	image11.setAttribute("src", "images/event-details/Lake11.jpg");
+	image12.setAttribute("src", "images/event-details/Lake12.jpg");
+	image13.setAttribute("src", "images/event-details/Lake13.jpg");
+	image14.setAttribute("src", "images/event-details/Lake14.jpg");
+	image15.setAttribute("src", "images/event-details/Lake15.jpg");
+	image16.setAttribute("src", "images/event-details/Lake16.jpg");
+	image17.setAttribute("src", "images/event-details/Lake17.jpg");
+	image18.setAttribute("src", "images/event-details/Lake18.jpg");
 
 }
 
@@ -102,6 +122,10 @@ function displayVip() {
 	var image7 = document.getElementById('image-vip7');
 	var image8 = document.getElementById('image-vip8');
 	var image9 = document.getElementById('image-vip9');
+	var image10 = document.getElementById('image-vip10');
+	var image11 = document.getElementById('image-vip11');
+	var image12 = document.getElementById('image-vip12');
+	var image13 = document.getElementById('image-vip13');
 	
 	image1.setAttribute("src", "images/vip/VIP1.jpg");
 	image2.setAttribute("src", "images/vip/VIP2.jpg");
@@ -112,6 +136,10 @@ function displayVip() {
 	image7.setAttribute("src", "images/vip/VIP7.jpg");
 	image8.setAttribute("src", "images/vip/VIP8.jpg");
 	image9.setAttribute("src", "images/vip/VIP9.jpg");
+	image10.setAttribute("src", "images/vip/Food1.jpg");
+	image11.setAttribute("src", "images/vip/Food2.jpg");
+	image12.setAttribute("src", "images/vip/Food3.jpg");
+	image13.setAttribute("src", "images/vip/Food4.jpg");
 }
 
 function displayEntertainment() {
@@ -120,78 +148,66 @@ function displayEntertainment() {
 	var current_page = document.getElementById("page-entertainment");
 	current_page.removeAttribute("hidden"); 
 	
-	var image1 = document.getElementById('image-ent-tbb1');
-	var image2 = document.getElementById('image-ent-tbb2');
-	var image3 = document.getElementById('image-ent-tbb3');
-	var image4 = document.getElementById('image-ent-tbb4');
-	var image5 = document.getElementById('image-ent-tbb5');
-	var image6 = document.getElementById('image-ent-tbb6');
-	var image7 = document.getElementById('image-ent-tbb7');
-	var image8 = document.getElementById('image-ent-tbb8');
-	var image9 = document.getElementById('image-ent-tbb9');
-	var image10 = document.getElementById('image-ent-tbb10');
-	var image11 = document.getElementById('image-ent-tbb11');
-	var image12 = document.getElementById('image-ent-tbb12');
-	var image13 = document.getElementById('image-ent-tbb13');
-	var image14 = document.getElementById('image-ent-tbb14');
+	var image1 = document.getElementById('image-ent-dw1');
+	var image2 = document.getElementById('image-ent-dw2');
+	var image3 = document.getElementById('image-ent-dw3');
+	var image4 = document.getElementById('image-ent-dw4');
+	var image5 = document.getElementById('image-ent-dw5');
+	var image6 = document.getElementById('image-ent-dw6');
+	var image7 = document.getElementById('image-ent-dw7');
+	var image8 = document.getElementById('image-ent-dw8');
 	
-	image1.setAttribute("src", "images/entertainment/tom-barlow/Barlow1.jpg");
-	image2.setAttribute("src", "images/entertainment/tom-barlow/Barlow2.jpg");
-	image3.setAttribute("src", "images/entertainment/tom-barlow/Barlow3.jpg");
-	image4.setAttribute("src", "images/entertainment/tom-barlow/Barlow4.jpg");
-	image5.setAttribute("src", "images/entertainment/tom-barlow/Barlow5.jpg");
-	image6.setAttribute("src", "images/entertainment/tom-barlow/Barlow6.jpg");
-	image7.setAttribute("src", "images/entertainment/tom-barlow/Barlow7.jpg");
-	image8.setAttribute("src", "images/entertainment/tom-barlow/Barlow8.jpg");
-	image9.setAttribute("src", "images/entertainment/tom-barlow/Barlow9.jpg");
-	image10.setAttribute("src", "images/entertainment/tom-barlow/Barlow10.jpg");
-	image11.setAttribute("src", "images/entertainment/tom-barlow/Barlow11.jpg");
-	image12.setAttribute("src", "images/entertainment/tom-barlow/Barlow12.jpg");
-	image13.setAttribute("src", "images/entertainment/tom-barlow/Barlow13.jpg");
-	image14.setAttribute("src", "images/entertainment/tom-barlow/Barlow14.jpg");
+	image1.setAttribute("src", "images/entertainment/dylan-wallace/Dylan1.jpg");
+	image2.setAttribute("src", "images/entertainment/dylan-wallace/Dylan2.jpg");
+	image3.setAttribute("src", "images/entertainment/dylan-wallace/Dylan3.jpg");
+	image4.setAttribute("src", "images/entertainment/dylan-wallace/Dylan4.jpg");
+	image5.setAttribute("src", "images/entertainment/dylan-wallace/Dylan5.jpg");
+	image6.setAttribute("src", "images/entertainment/dylan-wallace/Dylan6.jpg");
+	image7.setAttribute("src", "images/entertainment/dylan-wallace/Dylan7.jpg");
+	image8.setAttribute("src", "images/entertainment/dylan-wallace/Dylan8.jpg");
 	
 	
-	var image1 = document.getElementById('image-ent-coth1');
-	var image2 = document.getElementById('image-ent-coth2');
-	var image3 = document.getElementById('image-ent-coth3');
-	var image4 = document.getElementById('image-ent-coth4');
-	var image5 = document.getElementById('image-ent-coth5');
-	var image6 = document.getElementById('image-ent-coth6');
-	var image7 = document.getElementById('image-ent-coth7');
-	var image8 = document.getElementById('image-ent-coth8');
-	var image9 = document.getElementById('image-ent-coth9');
+	var image1 = document.getElementById('image-ent-fs1');
+	var image2 = document.getElementById('image-ent-fs2');
+	var image3 = document.getElementById('image-ent-fs3');
+	var image4 = document.getElementById('image-ent-fs4');
+	var image5 = document.getElementById('image-ent-fs5');
+	var image6 = document.getElementById('image-ent-fs6');
+	var image7 = document.getElementById('image-ent-fs7');
+	var image8 = document.getElementById('image-ent-fs8');
+	var image9 = document.getElementById('image-ent-fs9');
+	var image10 = document.getElementById('image-ent-fs10');
+	var image11 = document.getElementById('image-ent-fs11');
+	var image12 = document.getElementById('image-ent-fs12');
 	
-	image1.setAttribute("src", "images/entertainment/compliments/Compliments1.jpg");
-	image2.setAttribute("src", "images/entertainment/compliments/Compliments2.jpg");
-	image3.setAttribute("src", "images/entertainment/compliments/Compliments3.jpg");
-	image4.setAttribute("src", "images/entertainment/compliments/Compliments4.jpg");
-	image5.setAttribute("src", "images/entertainment/compliments/Compliments5.jpg");
-	image6.setAttribute("src", "images/entertainment/compliments/Compliments6.jpg");
-	image7.setAttribute("src", "images/entertainment/compliments/Compliments7.jpg");
-	image8.setAttribute("src", "images/entertainment/compliments/Compliments8.jpg");
-	image9.setAttribute("src", "images/entertainment/compliments/Compliments9.jpg");
-
-	var image1 = document.getElementById('image-ent-tmf1');
-	var image2 = document.getElementById('image-ent-tmf2');
-	var image3 = document.getElementById('image-ent-tmf3');
-	var image4 = document.getElementById('image-ent-tmf4');
-	var image5 = document.getElementById('image-ent-tmf5');
-	
-	image1.setAttribute("src", "images/entertainment/the-mighty-fish/Fish1.jpg");
-	image2.setAttribute("src", "images/entertainment/the-mighty-fish/Fish2.jpg");
-	image3.setAttribute("src", "images/entertainment/the-mighty-fish/Fish3.jpg");
-	image4.setAttribute("src", "images/entertainment/the-mighty-fish/Fish4.jpg");
-	image5.setAttribute("src", "images/entertainment/the-mighty-fish/Fish5.jpg");
+	image1.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix1.jpg");
+	image2.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix2.jpg");
+	image3.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix3.jpg");
+	image4.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix4.jpg");
+	image5.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix5.jpg");
+	image6.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix6.jpg");
+	image7.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix7.jpg");
+	image8.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix8.jpg");
+	image9.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix9.jpg");
+	image10.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix10.jpg");
+	image11.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix11.jpg");
+	image12.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix12.jpg");
 	
 	var image1 = document.getElementById('image-ent-td1');
 	var image2 = document.getElementById('image-ent-td2');
 	var image3 = document.getElementById('image-ent-td3');
 	var image4 = document.getElementById('image-ent-td4');
+	var image5 = document.getElementById('image-ent-td5');
+	var image6 = document.getElementById('image-ent-td6');
+	var image7 = document.getElementById('image-ent-td7');
 	
 	image1.setAttribute("src", "images/entertainment/the-duomatics/Duomatics1.jpg");
 	image2.setAttribute("src", "images/entertainment/the-duomatics/Duomatics2.jpg");
 	image3.setAttribute("src", "images/entertainment/the-duomatics/Duomatics3.jpg");
 	image4.setAttribute("src", "images/entertainment/the-duomatics/Duomatics4.jpg");
+	image5.setAttribute("src", "images/entertainment/the-duomatics/Duomatics5.jpg");
+	image6.setAttribute("src", "images/entertainment/the-duomatics/Duomatics6.jpg");
+	image7.setAttribute("src", "images/entertainment/the-duomatics/Duomatics7.jpg");
 	
 	var image1 = document.getElementById('image-ent-kp1');
 	var image2 = document.getElementById('image-ent-kp2');
@@ -201,6 +217,9 @@ function displayEntertainment() {
 	var image6 = document.getElementById('image-ent-kp6');
 	var image7 = document.getElementById('image-ent-kp7');
 	var image8 = document.getElementById('image-ent-kp8');
+	var image9 = document.getElementById('image-ent-kp9');
+	var image10 = document.getElementById('image-ent-kp10');
+	var image11 = document.getElementById('image-ent-kp11');
 	
 	image1.setAttribute("src", "images/entertainment/kristen-prince/KP1.jpg");
 	image2.setAttribute("src", "images/entertainment/kristen-prince/KP2.jpg");
@@ -210,6 +229,9 @@ function displayEntertainment() {
 	image6.setAttribute("src", "images/entertainment/kristen-prince/KP6.jpg");
 	image7.setAttribute("src", "images/entertainment/kristen-prince/KP7.jpg");
 	image8.setAttribute("src", "images/entertainment/kristen-prince/KP8.jpg");
+	image9.setAttribute("src", "images/entertainment/kristen-prince/KP9.jpg");
+	image10.setAttribute("src", "images/entertainment/kristen-prince/KP10.jpg");
+	image11.setAttribute("src", "images/entertainment/kristen-prince/KP11.jpg");
 
 }
 
@@ -246,6 +268,8 @@ function displaySponsors() {
 	var image6 = document.getElementById('image-sponsor6');
 	var image7 = document.getElementById('image-sponsor7');
 	var image8 = document.getElementById('image-sponsor8');
+	var image9 = document.getElementById('image-sponsor9');
+	var image10 = document.getElementById('image-sponsor10');
 	
 	image1.setAttribute("src", "images/sponsors/logo_alt.png");
 	image2.setAttribute("src", "images/sponsors/Rave.jpg");
@@ -255,6 +279,8 @@ function displaySponsors() {
 	image6.setAttribute("src", "images/sponsors/Echelon-Environmental.jpg");
 	image7.setAttribute("src", "images/sponsors/Lake-Life-Leisure.jpg");
 	image8.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
+	image9.setAttribute("src", "images/sponsors/Fling.jpg");
+	image10.setAttribute("src", "images/sponsors/McComb-Consulting.png");
 }
 
 function displayGallery() {
@@ -273,7 +299,7 @@ function displayGallery2018() {
 	var image1 = document.getElementById('image-2018-gallery1');
 	var image2 = document.getElementById('image-2018-gallery2');
 	var image3 = document.getElementById('image-2018-gallery3');
-	var image4 = document.getElementById('image-2018-gallery4');
+	var image4 = document.getElementById('image-2018-gallery5');
 	var image5 = document.getElementById('image-2018-gallery5');
 	var image6 = document.getElementById('image-2018-gallery6');
 	var image7 = document.getElementById('image-2018-gallery7');
@@ -318,7 +344,7 @@ function displayGallery2019() {
 	var image1 = document.getElementById('image-2019-gallery1');
 	var image2 = document.getElementById('image-2019-gallery2');
 	var image3 = document.getElementById('image-2019-gallery3');
-	var image4 = document.getElementById('image-2019-gallery4');
+	var image4 = document.getElementById('image-2019-gallery5');
 	var image5 = document.getElementById('image-2019-gallery5');
 	var image6 = document.getElementById('image-2019-gallery6');
 	var image7 = document.getElementById('image-2019-gallery7');
@@ -354,16 +380,16 @@ function displayGallery2019() {
 	var image37 = document.getElementById('image-2019-gallery37');
 	var image38 = document.getElementById('image-2019-gallery38');
 	var image39 = document.getElementById('image-2019-gallery39');
-	var image40 = document.getElementById('image-2019-gallery40');
-	var image41 = document.getElementById('image-2019-gallery41');
-	var image42 = document.getElementById('image-2019-gallery42');
-	var image43 = document.getElementById('image-2019-gallery43');
-	var image44 = document.getElementById('image-2019-gallery44');
-	var image45 = document.getElementById('image-2019-gallery45');
-	var image46 = document.getElementById('image-2019-gallery46');
-	var image47 = document.getElementById('image-2019-gallery47');
-	var image48 = document.getElementById('image-2019-gallery48');
-	var image49 = document.getElementById('image-2019-gallery49');
+	var image40 = document.getElementById('image-2019-gallery50');
+	var image41 = document.getElementById('image-2019-gallery51');
+	var image42 = document.getElementById('image-2019-gallery52');
+	var image43 = document.getElementById('image-2019-gallery53');
+	var image44 = document.getElementById('image-2019-gallery54');
+	var image45 = document.getElementById('image-2019-gallery55');
+	var image46 = document.getElementById('image-2019-gallery56');
+	var image47 = document.getElementById('image-2019-gallery57');
+	var image48 = document.getElementById('image-2019-gallery58');
+	var image49 = document.getElementById('image-2019-gallery59');
 	var image50 = document.getElementById('image-2019-gallery50');
 	var image51 = document.getElementById('image-2019-gallery51');
 	var image52 = document.getElementById('image-2019-gallery52');
@@ -437,7 +463,7 @@ function displayGallery2021() {
 	var image1 = document.getElementById('image-2021-gallery1');
 	var image2 = document.getElementById('image-2021-gallery2');
 	var image3 = document.getElementById('image-2021-gallery3');
-	var image4 = document.getElementById('image-2021-gallery4');
+	var image4 = document.getElementById('image-2021-gallery5');
 	var image5 = document.getElementById('image-2021-gallery5');
 	var image6 = document.getElementById('image-2021-gallery6');
 	var image7 = document.getElementById('image-2021-gallery7');
@@ -505,6 +531,142 @@ function displayGallery2021() {
 	image34.setAttribute("src", "images/gallery-2021/2021-34.jpg");
 }
 
+function displayGallery2022() {
+	hideAllPages();
+	document.title = WEBSITE_NAME + " - 2022 Gallery";
+	var current_page = document.getElementById("page-gallery-2022");
+	current_page.removeAttribute("hidden"); 
+	
+	var image1 = document.getElementById('image-2022-gallery1');
+	var image2 = document.getElementById('image-2022-gallery2');
+	var image3 = document.getElementById('image-2022-gallery3');
+	var image4 = document.getElementById('image-2022-gallery5');
+	var image5 = document.getElementById('image-2022-gallery5');
+	var image6 = document.getElementById('image-2022-gallery6');
+	var image7 = document.getElementById('image-2022-gallery7');
+	var image8 = document.getElementById('image-2022-gallery8');
+	var image9 = document.getElementById('image-2022-gallery9');
+	var image10 = document.getElementById('image-2022-gallery10');
+	var image11 = document.getElementById('image-2022-gallery11');
+	var image12 = document.getElementById('image-2022-gallery12');
+	var image13 = document.getElementById('image-2022-gallery13');
+	var image14 = document.getElementById('image-2022-gallery14');
+	var image15 = document.getElementById('image-2022-gallery15');
+	var image16 = document.getElementById('image-2022-gallery16');
+	var image17 = document.getElementById('image-2022-gallery17');
+	var image18 = document.getElementById('image-2022-gallery18');
+	var image19 = document.getElementById('image-2022-gallery19');
+	var image20 = document.getElementById('image-2022-gallery20');
+	var image21 = document.getElementById('image-2022-gallery21');
+	var image22 = document.getElementById('image-2022-gallery22');
+	var image23 = document.getElementById('image-2022-gallery23');
+	var image24 = document.getElementById('image-2022-gallery24');
+	var image25 = document.getElementById('image-2022-gallery25');
+	var image26 = document.getElementById('image-2022-gallery26');
+	var image27 = document.getElementById('image-2022-gallery27');
+	var image28 = document.getElementById('image-2022-gallery28');
+	var image29 = document.getElementById('image-2022-gallery29');
+	var image30 = document.getElementById('image-2022-gallery30');
+	var image31 = document.getElementById('image-2022-gallery31');
+	var image32 = document.getElementById('image-2022-gallery32');
+	var image33 = document.getElementById('image-2022-gallery33');
+	var image34 = document.getElementById('image-2022-gallery34');
+	var image35 = document.getElementById('image-2022-gallery35');
+	var image36 = document.getElementById('image-2022-gallery36');
+	var image37 = document.getElementById('image-2022-gallery37');
+	var image38 = document.getElementById('image-2022-gallery38');
+	var image39 = document.getElementById('image-2022-gallery39');	
+	var image40 = document.getElementById('image-2022-gallery50');
+	var image41 = document.getElementById('image-2022-gallery51');
+	var image42 = document.getElementById('image-2022-gallery52');
+	var image43 = document.getElementById('image-2022-gallery53');
+	var image44 = document.getElementById('image-2022-gallery54');
+	var image45 = document.getElementById('image-2022-gallery55');
+	var image46 = document.getElementById('image-2022-gallery56');
+	var image47 = document.getElementById('image-2022-gallery57');
+	var image48 = document.getElementById('image-2022-gallery58');
+	var image49 = document.getElementById('image-2022-gallery59');	
+	var image50 = document.getElementById('image-2022-gallery50');
+	var image51 = document.getElementById('image-2022-gallery51');
+	var image52 = document.getElementById('image-2022-gallery52');
+	var image53 = document.getElementById('image-2022-gallery53');
+	var image54 = document.getElementById('image-2022-gallery54');
+	var image55 = document.getElementById('image-2022-gallery55');
+	var image56 = document.getElementById('image-2022-gallery56');
+	var image57 = document.getElementById('image-2022-gallery57');
+	var image58 = document.getElementById('image-2022-gallery58');
+	var image59 = document.getElementById('image-2022-gallery59');
+	var image60 = document.getElementById('image-2022-gallery60');
+	var image61 = document.getElementById('image-2022-gallery61');
+	var image62 = document.getElementById('image-2022-gallery62');
+	var image63 = document.getElementById('image-2022-gallery63');
+	
+	
+	image1.setAttribute("src", "images/gallery-2022/2022-1.jpg");
+	image2.setAttribute("src", "images/gallery-2022/2022-2.jpg");
+	image3.setAttribute("src", "images/gallery-2022/2022-3.jpg");
+	image4.setAttribute("src", "images/gallery-2022/2022-4.jpg");
+	image5.setAttribute("src", "images/gallery-2022/2022-5.jpg");
+	image6.setAttribute("src", "images/gallery-2022/2022-6.jpg");
+	image7.setAttribute("src", "images/gallery-2022/2022-7.jpg");
+	image8.setAttribute("src", "images/gallery-2022/2022-8.jpg");
+	image9.setAttribute("src", "images/gallery-2022/2022-9.jpg");
+	image10.setAttribute("src", "images/gallery-2022/2022-10.jpg");
+	image11.setAttribute("src", "images/gallery-2022/2022-11.jpg");
+	image12.setAttribute("src", "images/gallery-2022/2022-12.jpg");
+	image13.setAttribute("src", "images/gallery-2022/2022-13.jpg");
+	image14.setAttribute("src", "images/gallery-2022/2022-14.jpg");
+	image15.setAttribute("src", "images/gallery-2022/2022-15.jpg");
+	image16.setAttribute("src", "images/gallery-2022/2022-16.jpg");
+	image17.setAttribute("src", "images/gallery-2022/2022-17.jpg");
+	image18.setAttribute("src", "images/gallery-2022/2022-18.jpg");
+	image19.setAttribute("src", "images/gallery-2022/2022-19.jpg");
+	image20.setAttribute("src", "images/gallery-2022/2022-20.jpg");
+	image21.setAttribute("src", "images/gallery-2022/2022-21.jpg");
+	image22.setAttribute("src", "images/gallery-2022/2022-22.jpg");
+	image23.setAttribute("src", "images/gallery-2022/2022-23.jpg");
+	image24.setAttribute("src", "images/gallery-2022/2022-24.jpg");
+	image25.setAttribute("src", "images/gallery-2022/2022-25.jpg");
+	image26.setAttribute("src", "images/gallery-2022/2022-26.jpg");
+	image27.setAttribute("src", "images/gallery-2022/2022-27.jpg");
+	image28.setAttribute("src", "images/gallery-2022/2022-28.jpg");
+	image29.setAttribute("src", "images/gallery-2022/2022-29.jpg");
+	image30.setAttribute("src", "images/gallery-2022/2022-30.jpg");
+	image31.setAttribute("src", "images/gallery-2022/2022-31.jpg");
+	image32.setAttribute("src", "images/gallery-2022/2022-32.jpg");
+	image33.setAttribute("src", "images/gallery-2022/2022-33.jpg");
+	image34.setAttribute("src", "images/gallery-2022/2022-34.jpg");
+	image35.setAttribute("src", "images/gallery-2022/2022-35.jpg");
+	image36.setAttribute("src", "images/gallery-2022/2022-36.jpg");
+	image37.setAttribute("src", "images/gallery-2022/2022-37.jpg");
+	image38.setAttribute("src", "images/gallery-2022/2022-38.jpg");
+	image39.setAttribute("src", "images/gallery-2022/2022-39.jpg");
+	image40.setAttribute("src", "images/gallery-2022/2022-40.jpg");
+	image41.setAttribute("src", "images/gallery-2022/2022-41.jpg");
+	image42.setAttribute("src", "images/gallery-2022/2022-42.jpg");
+	image43.setAttribute("src", "images/gallery-2022/2022-43.jpg");
+	image44.setAttribute("src", "images/gallery-2022/2022-44.jpg");
+	image45.setAttribute("src", "images/gallery-2022/2022-45.jpg");
+	image46.setAttribute("src", "images/gallery-2022/2022-46.jpg");
+	image47.setAttribute("src", "images/gallery-2022/2022-47.jpg");
+	image48.setAttribute("src", "images/gallery-2022/2022-48.jpg");
+	image49.setAttribute("src", "images/gallery-2022/2022-49.jpg");
+	image50.setAttribute("src", "images/gallery-2022/2022-50.jpg");
+	image51.setAttribute("src", "images/gallery-2022/2022-51.jpg");
+	image52.setAttribute("src", "images/gallery-2022/2022-52.jpg");
+	image53.setAttribute("src", "images/gallery-2022/2022-53.jpg");
+	image54.setAttribute("src", "images/gallery-2022/2022-54.jpg");
+	image55.setAttribute("src", "images/gallery-2022/2022-55.jpg");
+	image56.setAttribute("src", "images/gallery-2022/2022-56.jpg");
+	image57.setAttribute("src", "images/gallery-2022/2022-57.jpg");
+	image58.setAttribute("src", "images/gallery-2022/2022-58.jpg");
+	image59.setAttribute("src", "images/gallery-2022/2022-59.jpg");
+	image60.setAttribute("src", "images/gallery-2022/2022-60.jpg");
+	image61.setAttribute("src", "images/gallery-2022/2022-61.jpg");
+	image62.setAttribute("src", "images/gallery-2022/2022-62.jpg");
+	image63.setAttribute("src", "images/gallery-2022/2022-63.jpg");
+}
+
 function displayContact() {
 	hideAllPages();
 	document.title = WEBSITE_NAME + " - Contact";
@@ -551,13 +713,13 @@ function checkUrlAndLoadCorrespondingDisplay() {
 		displaySponsors();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2018" || window.location.href == "https://alapalooza.github.io/#gallery-2018" || window.location.href == "domain.com#gallery-2018"){
-		displayGallery4018();
+		displayGallery5018();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2019" || window.location.href == "https://alapalooza.github.io/#gallery-2019" || window.location.href == "domain.com#gallery-2019"){
-		displayGallery4019();
+		displayGallery5019();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2021" || window.location.href == "https://alapalooza.github.io/#gallery-2021" || window.location.href == "domain.com#gallery-2021"){
-		displayGallery4021();
+		displayGallery5021();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#contact" || window.location.href == "https://alapalooza.github.io/#contact" || window.location.href == "domain.com#contact") {
 		displayContact();
@@ -568,48 +730,33 @@ function checkUrlAndLoadCorrespondingDisplay() {
 }
 
 function toggleGalleryTextTBB() {
-	var selected_element = document.getElementById("gallery-info-tbb");
-	var selected_element2 = document.getElementById("gallery-title-tbb");
+	var selected_element = document.getElementById("gallery-info-dw");
+	var selected_element2 = document.getElementById("gallery-title-dw");
 	
-	if(is_tbb_text_hidden) {
+	if(is_dw_text_hidden) {
 		selected_element.removeAttribute("hidden");
 		selected_element2.removeAttribute("hidden");
-		is_tbb_text_hidden = false;
+		is_dw_text_hidden = false;
 	}
-	else if(!is_tbb_text_hidden) {
+	else if(!is_dw_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
 		selected_element2.setAttribute("hidden", "hidden");
-		is_tbb_text_hidden = true;
+		is_dw_text_hidden = true;
 	}
 }
-function toggleGalleryTextCOTH() {
-	var selected_element = document.getElementById("gallery-info-coth");
-	var selected_element2 = document.getElementById("gallery-title-coth");
+function toggleGalleryTextFS() {
+	var selected_element = document.getElementById("gallery-info-fs");
+	var selected_element2 = document.getElementById("gallery-title-fs");
 	
-	if(is_coth_text_hidden) {
+	if(is_fs_text_hidden) {
 		selected_element.removeAttribute("hidden");
 		selected_element2.removeAttribute("hidden");
-		is_coth_text_hidden = false;
+		is_fs_text_hidden = false;
 	}
-	else if(!is_coth_text_hidden) {
+	else if(!is_fs_text_hidden) {
 		selected_element.setAttribute("hidden", "hidden");
 		selected_element2.setAttribute("hidden", "hidden");
-		is_coth_text_hidden = true;
-	}
-}
-function toggleGalleryTextTMF() {
-	var selected_element = document.getElementById("gallery-info-tmf");
-	var selected_element2 = document.getElementById("gallery-title-tmf");
-	
-	if(is_tmf_text_hidden) {
-		selected_element.removeAttribute("hidden");
-		selected_element2.removeAttribute("hidden");
-		is_tmf_text_hidden = false;
-	}
-	else if(!is_tmf_text_hidden) {
-		selected_element.setAttribute("hidden", "hidden");
-		selected_element2.setAttribute("hidden", "hidden");
-		is_tmf_text_hidden = true;
+		is_fs_text_hidden = true;
 	}
 }
 function toggleGalleryTextTD() {

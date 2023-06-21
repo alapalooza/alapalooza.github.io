@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="preload" href="images/alapalooza_2022_poster.jpg" as="image"> 
+		<title>Alapalooza 2022</title>
+	</head>
+	<body onload="checkUrlAndLoadCorrespondingDisplay()">
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="" onclick="displayIndex()">Alapalooza</a>
+				<button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">	
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-event-details" href="#event-details" onclick="displayEventDetails()">Event Details</a>
+						</li>				
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-vip" href="#vip" onclick="displayVip()">VIP On-shore Experience</a>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-entertainment" href="#entertainment" onclick="displayEntertainment()">Entertainment</a>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-merchandise" href="#merchandise" onclick="displayMerchandise()">Merchandise</a>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-sponsors" href="#sponsors" onclick="displaySponsors()">Sponsors</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Photo Galleries
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">							
+								<li>
+									<a class="dropdown-item" id="header-link-gallery-2018" href="#gallery-2018" onclick="displayGallery2018()">Alapalooza 2018</a>
+								</li>
+								<li>
+									<a class="dropdown-item" id="header-link-gallery-2019" href="#gallery-2019" onclick="displayGallery2019()">Alapalooza 2019</a>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<a class="dropdown-item" id="header-link-gallery-2021" href="#gallery-2021" onclick="displayGallery2021()">Alapalooza 2021</a>
+								</li>
+								<li>
+									<a class="dropdown-item" id="header-link-gallery-2022" href="#gallery-2022" onclick="displayGallery2022()">Alapalooza 2022</a>
+								</li>								
+							</ul>							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-contact" href="#contact" onclick="displayContact()">Contact</a>
+						</li>						
+					</ul>
+					
+				</div>
+
+			</div>
+					
+		</nav>
+				
+		<main>
+		
+			<div class="container">
+			
+				<hr>
+					
+				<div id="page-index" hidden>
+					
+					<div class="poster"></div>
+					
+				</div>
+					
+				<div id="page-event-details" hidden>
+					
+					<div class="page-text">
+					
+						<h1 id="header-event-details">
+							<strong>Event Details</strong>
+						</h1>
+						
+						<hr>
+						
+						<h2 class="center-text">Alapalooza 2022</h2>
+						<h2 class="center-text">Civic Holiday Weekend</h2>
+						<h2 class="center-text">Sunday July 31, 2022</h2>	
+						<h2 class="center-text"><strong>Rain or Shine</strong></h2>
+						<hr>
+						
+						<ul>
+							<li class="item">Live Entertainment – 2 Bands, 2 Duos & 1 Solo</li>
+							<li class="item">Spectacular Sound & Light Show</li>
+							<li class="item">2 stages – The Mancave & Lakeside</li>
+							<li class="item">Anchor your boat and watch from the bay - everyone welcome</li>
+							<li class="item">4 Live feed video cameras
+								<ul>
+									<li>18 ft concert projection screen at lake edge for spectacular boat viewing</li>
+									<li>Streamed live to YouTube</li>
+								</ul>
+							</li>
+							<li class="item">Cost is free, but donations to help cover the bands are greatly appreciated</li>
+							<li class="item">Alapalooza 2022 event T-shirts, Hats & Koozies are available</li>
+						</ul>
+						
+					</div>
+					
+					<div class="gallery-carousel">
+						<div id="gallery-event-details" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img id="image-event-details1" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details2" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details3" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details4" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details5" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details6" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details7" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-event-details8" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-event-details" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-event-details" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="page-vip" hidden>
+					
+					<div class="page-text">
+					
+						<h1 id="header-vip"><strong>VIP On-Shore Experience</strong></h1>
+
+						<hr>
+						
+						<ul>
+							<li class="item">Limited number of on-shore guests by invitation only</li>
+							<li class="item">Includes fully catered Southern BBQ Dinner by Chef Andrew & crew
+								<ul>
+									<li>Smoked Beef Brisket, Pulled Pork & BBQ Chicken</li>
+									<li>Smoked BBQ Baked Beans</li>
+									<li>Fresh baked corn bread</li>
+									<li>Corn on the cob, dinner rolls</li>
+									<li>Coleslaw, potato salad, bean salad</li>
+									<li>Dessert</li>
+								</ul>
+							</li>
+							<li class="item">Includes Alapalooza 2022 T-shirt, Koozie & VIP Lanyard</li>
+							<li class="item">Includes chance of winning door prizes</li>
+							<li class="item">Lawn seating – bring your own chairs</li>
+							<li class="item">Bring your own refreshments (cans / plastic containers only please)</li>
+							<li class="item">$50 per person</li>
+							<li class="item">Kids 12 and under free with parent (lanyard but no shirt or koozie)</li>
+							<li class="item">You must wear your VIP Lanyard to be on shore.</li>
+						</ul>
+					
+					</div>
+					
+					<div class="gallery-carousel">
+						<div id="gallery-vip" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img id="image-vip1" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip2" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip3" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip4" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip5" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip6" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip7" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip8" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-vip9" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-vip" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-vip" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div id="page-entertainment" hidden>
+				
+					<h1 id="header-entertainment"><strong>Live Entertainment</strong></h1>
+					
+					<hr>
+					<p>Please note: These Images are best viewed on a computer, rather than on a phone.</p>
+					<div id="gallery-tbb" class="carousel slide" data-bs-ride="carousel">
+					
+						<div class="carousel-inner">
+									
+							<h2 class="band-name" id="gallery-title-tbb">Tom Barlow Band</h2>
+							<p class="band-info" id="gallery-info-tbb">After missing the past 2 years we are excited to bring back the amazing Tom Barlow Band for their 4th Alapalooza appearance. Tom is a 4 time Juno nominated singer/songwriter, Canadian Rising Star Award winner with 3 Top 10 hits, playing high energy tunes from all your favorite artists - Get ready to dance, watch the amazing light show and sing along! Playing with Tom are John Bride on guitar (Cameo Blues Band, Amanda Marshall), Kristen Prince on sax, Stan Miczek on bass (Sass Jordan, Guess Who, Kim Mitchell) and Dean Glover on drums.  You can catch Tom and the band every Thursday this summer on the outdoor stage at Shore Grille and Grotto in Mississisauga.<br>
+							<a class="carosel-link" href="http://www.facebook.com/BarlowCommunity/">Tom Barlow Band on Facebook</a><br>
+							<a class="carosel-link" href="http://www.barlowonline.com/">Tom Barlow Band Website</a>.</p>
+							<a class="hide-carousel-text" id="hide-gallery-text-tbb" onclick="toggleGalleryTextTBB();">Click here to toggle text visibility</a>
+							
+							<div class="carousel-item active">
+								<img id="image-ent-tbb1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb2" class="d-block w-100" alt="...">  
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb3" class="d-block w-100" alt="...">      
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb4" class="d-block w-100" alt="...">     
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb5" class="d-block w-100" alt="...">     
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb7" class="d-block w-100" alt="...">    
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb8" class="d-block w-100" alt="..."> 
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb9" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb10" class="d-block w-100" alt="...">     
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb11" class="d-block w-100" alt="...">   
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb12" class="d-block w-100" alt="...">     
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb13" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tbb14" class="d-block w-100" alt="...">  
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-tbb" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-tbb" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						
+					</div> 
+						
+					<hr>
+						
+					<div id="gallery-coth" class="carousel slide" data-bs-ride="carousel">
+					
+						<div class="carousel-inner">
+									
+							<h2 class="band-name" id="gallery-title-coth">Compliments Of The House</h2>
+							<p class="band-info" id="gallery-info-coth">Porcupine Bay cottager Steve Wallace will be returning for his 6th show at Alapalooza - this time with his new live party band! Steve (and his son Dylan) played previously with Gap 33, and the Dylan Wallace Band. Joining Steve (keyboard and vocals) are Malayka Ghanem (vocals), Matt McWaters (bass), Matt Del Grosso (drums) and Kyle Renton (guitar).  Compliments of the House will be sure to entertain us with a variety of danceable party tunes from the 60’s to present – you will likely be dancing and singing to a couple disco favorites among other classics.<br>
+							<a class="carosel-link" href="http://www.facebook.com/compliments.live" target="_blank">Compliments of the House Facebook page</a><br>
+							<a class="carosel-link" href="http://www.complimentslive.com/the-band" target="_blank">Compliments of the House Website</a></p>
+
+							<a class="hide-carousel-text" id="hide-gallery-text-coth" onclick="toggleGalleryTextCOTH();">Click here to toggle text visibility</a>
+
+
+							<div class="carousel-item active">
+								<img id="image-ent-coth1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth8" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-coth9" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-coth" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-coth" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+						
+					<hr>
+						
+					<div id="gallery-tmf" class="carousel slide" data-bs-ride="carousel">
+					
+						<div class="carousel-inner">
+									
+							<h2 class="band-name" id="gallery-title-tmf">The Mighty Fish</h2>
+							<p class="band-info" id="gallery-info-tmf">In 2019, The Mighty Fish played at Alapalooza in their full band configuration. Last year Kit Allen (vocals, beat box) and Michelle Hedley (vocals, guitar) played for us as a duo. They have a family cottage in Marina Bay and come from a very musical family. They will be returning as a duo again this year unless Michelle convinces her husband Craig (guitar) to join them. The Mighty Fish can be seen playing the bars and pubs in the Burlington / Hamilton area. Their tag line is “Acoustic music for the masses” blending the classics and the modern to let you get your party on! Michelle is also busy playing the Niagara region wineries and bistros as a solo artist. <br>
+							<a class="carosel-link" href="http://www.themightyfish.ca/" target="_blank">The Mighty Fish's Website.</a><br>
+							<a class="carosel-link" href="https://www.facebook.com/groups/Themightyfish/" target="_blank">The Mighty Fish's Facebook page.</a><br>
+							<a class="carosel-link" href="http://www.facebook.com/MichelleHedleyAcoustics" target="_blank">Michelle Hedley's Facebook page</a></p>
+
+							<a class="hide-carousel-text" id="hide-gallery-text-tmf" onclick="toggleGalleryTextTMF();">Click here to toggle text visibility</a>
+
+							<div class="carousel-item active">
+								<img id="image-ent-tmf1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tmf2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tmf3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tmf4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-tmf5" class="d-block w-100" alt="...">
+							</div>
+							
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-tmf" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-tmf" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					
+					<hr>
+					
+					<div id="gallery-td" class="carousel slide" data-bs-ride="carousel">
+					
+						<div class="carousel-inner">
+									
+							<h2 class="band-name" id="gallery-title-td">The Duomatics</h2>
+							<p class="band-info" id="gallery-info-td">Last summer I had the pleasure to watch Peter Bowering play guitar and sing on White Trout Bay. This year we welcome Peter (vocals, guitar, drums) and John Gurnsey (drums, vocals, guitar, piano) - The Duomatics - to play at Alapalooza. The Duomatics are an acoustic Montreal-area duo, specializing in great songs from the 60's to today.  Multi-instrumentalist and vocalists, The Duomatics literally switch it up during the show, as Peter and John switch instruments for more variety and entertainment value. Looking forward to hearing them on the bay!<br>
+							<a class="carosel-link" href="https://www.facebook.com/TheDuomatics/" target="_blank">The Duomatics Facebook page.</a></p>
+
+							<a class="hide-carousel-text" id="hide-gallery-text-td" onclick="toggleGalleryTextTD();">Click here to toggle text visibility</a>
+
+							<div class="carousel-item active">
+								<img id="image-ent-td1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-td2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-td3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-td4" class="d-block w-100" alt="...">
+							</div>
+							
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-td" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-td" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					
+					<hr>
+					
+					<div id="gallery-kp" class="carousel slide" data-bs-ride="carousel">
+					
+						<div class="carousel-inner">
+									
+							<h2 class="band-name" id="gallery-title-kp">Kristen Prince</h2>
+							<p class="band-info" id="gallery-info-kp">Kristen will be returning to Alapalooza with Tom Barlow for the 4th time as his guest saxophone player as well as vocalist. This year we are pleased to feature her as a solo artist as well. She will be playing a few cool sax tunes while the band takes a break. Kristen plays regularly in the Port Credit area with The Dedbeats and Strange Brew as well as solo gigs. She recently played with The Arkells!    <br>
+								<a class="carosel-link" href="https://www.facebook.com/TheDedbeatsBand/" target="_blank">The Dedbeats Facebook page.</a><br>
+								<a class="carosel-link" href="https://www.facebook.com/TheStrangeBrewDuo/" target="_blank">The Strange Brew Duo Facebook page.</a><br>
+								<a class="carosel-link" href="https://www.facebook.com/kponsax/" target="_blank">Kristen Prince's Facebook page.</a></p>
+
+							<a class="hide-carousel-text" id="hide-gallery-text-kp" onclick="toggleGalleryTextKP();">Click here to toggle text visibility</a>
+
+							<div class="carousel-item active">
+								<img id="image-ent-kp1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-ent-kp8" class="d-block w-100" alt="...">
+							</div>
+							
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-kp" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-kp" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					
+					
+				</div>
+				
+				<div id="page-merchandise" hidden>
+				
+					<div class="page-text">
+					
+						<h1 id="header-merchandise"><strong>Tickets & Merchandise</strong></h1>
+						<hr>
+						<p class="note">							
+						Tickets to the VIP On-shore Experience will be limited and sold on a first come – first served basis. Anyone who purchased Alapalooza merchandise in the past will be contacted and given first opportunity to buy tickets. </p>
+
+						<table class="w-100">
+							<tr >
+								<td >
+									<a id="link-vip" href="#vip" onclick="displayVip()">VIP On-shore Experience:</a>
+								</td>
+								<td >
+									$50 per person / 12 & under Free
+								</td>
+							</tr>
+							<tr >
+								<td >
+									Alapalooza T-shirt:    
+								</td>
+								<td >
+									$25 each    
+								</td>
+							</tr>
+							<tr >
+								<td >
+									Alapalooza Embroidered Baseball Hat:   
+								</td>
+								<td >
+									$15 each    
+								</td>
+							</tr>
+							<tr >
+								<td >
+									Alapalooza Koozie:   
+								</td>
+								<td >
+									$5 each    
+								</td>
+							</tr>
+						</table>
+						<hr>
+						<strong>***Note: please specify size of shirt XS, S, M, L, XL, 2XL, 3XL, 4XL</strong>
+						<hr>	
+						<p>
+						To order, contact Al by one of the following:<br>
+						Reply to the Facebook Messager invitation (preferred)<br>
+						Email: sledheadal@gmail.com <a href="mailto:sledheadal@gmail.com">(Click here to start an email)</a><br>
+						Text: 289-259-5992<br>
+							
+						Payment: E-transfer to sledheadal@gmail.com
+						</p>
+						<hr>	
+					</div>
+					
+					<div class="gallery-carousel">
+						<div id="gallery-merchandise" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img id="image-merch1" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-merch2" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-merch3" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img id="image-merch4" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#gallery-merchandise" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#gallery-merchandise" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div id="page-sponsors" hidden>
+					<h1 id="header-sponsors"><strong>Supporters</strong></h1>
+					<hr>
+						<p>Thanks to our sponsors / supporters for helping to make the event possible.</p>
+
+							<a href="https://www.johnbacherconstruction.com/" target="_blank"><img id="image-sponsor1" alt="Bacher Construction" height="90" width="330"></a>
+
+							<a href="http://ravecontracting.ca/" target="_blank"><img id="image-sponsor2" alt="Rave Contracting" height="90" width="330"></a>
+
+							<a href="https://www.tntworld.com/" target="_blank"><img id="image-sponsor3" alt="The Next Trend Design" height="90" width="330"></a>
+
+							<a href="http://www.highlandpackers.com/" target="_blank"><img id="image-sponsor4" alt="Highland Packers" height="90" width="330"></a>
+
+							<a href="https://www.axiomaudio.com/" target="_blank"><img id="image-sponsor5" alt="Axiom Audio" height="90" width="330"></a>
+
+							<a href="https://echelonenvironmental.ca/cds/" target="_blank"><img id="image-sponsor6" alt="Echelon Environmental" height="90" width="330"></a>
+
+							<a href="https://lakelifeleisure.ca/" target="_blank"><img id="image-sponsor7" alt="Lake Life Leisure" height="330" width="330"></a>
+
+							<a href="http://www.cleaningcentral.ca/" target="_blank"><img id="image-sponsor8" height="180" width="330" alt="Cleaning Central"></a>
+						
+							
+				</div>
+				
+				<div id="page-gallery-2018" hidden>
+					<h1 id="header-gallery-2018">Alapalooza 2018</h1>
+					<p>Click the arrows on the photo to see more.</p>						
+					
+					<div id="gallery-2018" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img id="image-2018-gallery1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery8" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery9" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery10" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery11" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery12" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery13" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery14" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery15" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery16" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery17" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2018-gallery18" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2018" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-2018" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				
+				<div id="page-gallery-2019" hidden>
+					<h1 id="header-gallery-2019">Alapalooza 2019</h1>
+					<p>Click the arrows on the photo to see more.</p>						
+					
+					<div id="gallery-2019" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img id="image-2019-gallery1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery8" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery9" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery10" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery11" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery12" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery13" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery14" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery15" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery16" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery17" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery18" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery19" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery20" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery21" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery22" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery23" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery24" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery25" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery26" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery27" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery28" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery29" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery30" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery31" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery32" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery33" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery34" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery35" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery36" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery37" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery38" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery39" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery40" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery41" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery42" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery43" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery44" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery45" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery46" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery47" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery48" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery49" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery50" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery51" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery52" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2019-gallery53" class="d-block w-100" alt="...">
+							</div>
+
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2019" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-2019" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				
+				<div id="page-gallery-2021" hidden>
+					<h1 id="header-gallery-2021">Alapalooza 2021</h1>
+					<p>Click the arrows on the photo to see more.</p>						
+					
+					<div id="gallery-2021" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img id="image-2021-gallery1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery8" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery9" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery10" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery11" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery12" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery13" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery14" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery15" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery16" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery17" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery18" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery19" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery20" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery21" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery22" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery23" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery24" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery25" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery26" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery27" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2021-gallery28" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery29" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery30" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery31" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery32" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery33" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2021-gallery34" class="d-block w-100" alt="...">
+							</div>
+
+						</div>
+						
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2021" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-2021" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						
+					</div>
+					
+				</div>
+				
+				<div id="page-gallery-2022" hidden>
+					<h1 id="header-gallery-2022">Alapalooza 2022</h1>
+					<p>Click the arrows on the photo to see more.</p>						
+					
+					<div id="gallery-2022" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img id="image-2022-gallery1" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery2" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery3" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery4" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery5" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery6" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery7" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery8" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery9" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery10" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery11" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery12" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery13" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery14" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery15" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery16" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery17" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery18" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery19" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery20" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery21" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery22" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery23" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery24" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery25" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery26" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery27" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img id="image-2022-gallery28" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery29" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery30" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery31" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery32" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery33" class="d-block w-100" alt="...">
+							</div>
+							
+							<div class="carousel-item">
+								<img id="image-2022-gallery34" class="d-block w-100" alt="...">
+							</div>
+
+						</div>
+						
+						<button class="carousel-control-prev" type="button" data-bs-target="#gallery-2022" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#gallery-2022" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						
+					</div>
+					
+				</div>
+				
+				<div id="page-contact" hidden>
+				
+					<h1 id="header-contact">Contact</h1>				
+					
+					
+					<p class="note">
+					<strong>For Alapalooza information:</strong><br>
+						Facebook Messenger:		Al Fletcher<br>
+						Email:					Sledheadal@gmail.com <a href="mailto:sledheadal@gmail.com">(Click here to start email)</a><br>
+						Text:					289-259-5992<br><br>
+					
+					<strong>For Website issues:<br></strong>
+						Email:               	kyle.g.s.james@gmail.com <a href="mailto:kyle.g.s.james@gmail.com">(Click here to start email)</a>
+					
+					</p>
+				</div>
+				
+				<hr>
+			
+			</div>
+		</main>
+			
+		<footer class="container">
+		
+			<h6>Website made by &copy;<a href="http://github.com/kyle-james">Kyle James</a>, 2022</h6>
+		</footer>	
+			
+	</body>
+	
+</html>
