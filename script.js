@@ -599,15 +599,15 @@ function displayGallery2022() {
 	var image62 = document.getElementById('image-2022-gallery62');
 	var image63 = document.getElementById('image-2022-gallery63');
 	
-	image1.setAttribute("src", "images/gallery-2022/2022-1.jpg");
-	image2.setAttribute("src", "images/gallery-2022/2022-2.jpg");
-	image3.setAttribute("src", "images/gallery-2022/2022-3.jpg");
-	image4.setAttribute("src", "images/gallery-2022/2022-4.jpg");
-	image5.setAttribute("src", "images/gallery-2022/2022-5.jpg");
-	image6.setAttribute("src", "images/gallery-2022/2022-6.jpg");
-	image7.setAttribute("src", "images/gallery-2022/2022-7.jpg");
-	image8.setAttribute("src", "images/gallery-2022/2022-8.jpg");
-	image9.setAttribute("src", "images/gallery-2022/2022-9.jpg");
+	image1.setAttribute("src", "images/gallery-2022/2022-01.jpg");
+	image2.setAttribute("src", "images/gallery-2022/2022-02.jpg");
+	image3.setAttribute("src", "images/gallery-2022/2022-03.jpg");
+	image4.setAttribute("src", "images/gallery-2022/2022-04.jpg");
+	image5.setAttribute("src", "images/gallery-2022/2022-05.jpg");
+	image6.setAttribute("src", "images/gallery-2022/2022-06.jpg");
+	image7.setAttribute("src", "images/gallery-2022/2022-07.jpg");
+	image8.setAttribute("src", "images/gallery-2022/2022-08.jpg");
+	image9.setAttribute("src", "images/gallery-2022/2022-09.jpg");
 	image10.setAttribute("src", "images/gallery-2022/2022-10.jpg");
 	image11.setAttribute("src", "images/gallery-2022/2022-11.jpg");
 	image12.setAttribute("src", "images/gallery-2022/2022-12.jpg");
