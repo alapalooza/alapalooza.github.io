@@ -279,7 +279,7 @@ function displaySponsors() {
 	image6.setAttribute("src", "images/sponsors/Echelon-Environmental.jpg");
 	image7.setAttribute("src", "images/sponsors/Lake-Life-Leisure.jpg");
 	image8.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
-	image9.setAttribute("src", "images/sponsors/fling.jpg");
+	image9.setAttribute("src", "images/sponsors/Fling.jpg");
 	image10.setAttribute("src", "images/sponsors/mccomb.png");
 }
 
@@ -299,7 +299,7 @@ function displayGallery2018() {
 	var image1 = document.getElementById('image-2018-gallery1');
 	var image2 = document.getElementById('image-2018-gallery2');
 	var image3 = document.getElementById('image-2018-gallery3');
-	var image4 = document.getElementById('image-2018-gallery5');
+	var image4 = document.getElementById('image-2018-gallery4');
 	var image5 = document.getElementById('image-2018-gallery5');
 	var image6 = document.getElementById('image-2018-gallery6');
 	var image7 = document.getElementById('image-2018-gallery7');
@@ -344,7 +344,7 @@ function displayGallery2019() {
 	var image1 = document.getElementById('image-2019-gallery1');
 	var image2 = document.getElementById('image-2019-gallery2');
 	var image3 = document.getElementById('image-2019-gallery3');
-	var image4 = document.getElementById('image-2019-gallery5');
+	var image4 = document.getElementById('image-2019-gallery4');
 	var image5 = document.getElementById('image-2019-gallery5');
 	var image6 = document.getElementById('image-2019-gallery6');
 	var image7 = document.getElementById('image-2019-gallery7');
@@ -380,16 +380,16 @@ function displayGallery2019() {
 	var image37 = document.getElementById('image-2019-gallery37');
 	var image38 = document.getElementById('image-2019-gallery38');
 	var image39 = document.getElementById('image-2019-gallery39');
-	var image40 = document.getElementById('image-2019-gallery50');
-	var image41 = document.getElementById('image-2019-gallery51');
-	var image42 = document.getElementById('image-2019-gallery52');
-	var image43 = document.getElementById('image-2019-gallery53');
-	var image44 = document.getElementById('image-2019-gallery54');
-	var image45 = document.getElementById('image-2019-gallery55');
-	var image46 = document.getElementById('image-2019-gallery56');
-	var image47 = document.getElementById('image-2019-gallery57');
-	var image48 = document.getElementById('image-2019-gallery58');
-	var image49 = document.getElementById('image-2019-gallery59');
+	var image40 = document.getElementById('image-2019-gallery40');
+	var image41 = document.getElementById('image-2019-gallery41');
+	var image42 = document.getElementById('image-2019-gallery42');
+	var image43 = document.getElementById('image-2019-gallery43');
+	var image44 = document.getElementById('image-2019-gallery44');
+	var image45 = document.getElementById('image-2019-gallery45');
+	var image46 = document.getElementById('image-2019-gallery46');
+	var image47 = document.getElementById('image-2019-gallery47');
+	var image48 = document.getElementById('image-2019-gallery48');
+	var image49 = document.getElementById('image-2019-gallery49');
 	var image50 = document.getElementById('image-2019-gallery50');
 	var image51 = document.getElementById('image-2019-gallery51');
 	var image52 = document.getElementById('image-2019-gallery52');
@@ -415,7 +415,6 @@ function displayGallery2019() {
 	image17.setAttribute("src", "images/gallery-2019/2019-17.jpg");
 	image18.setAttribute("src", "images/gallery-2019/2019-18.jpg");
 	image19.setAttribute("src", "images/gallery-2019/2019-19.jpg");
-	
 	image20.setAttribute("src", "images/gallery-2019/2019-20.jpg");
 	image21.setAttribute("src", "images/gallery-2019/2019-21.jpg");
 	image22.setAttribute("src", "images/gallery-2019/2019-22.jpg");
@@ -436,7 +435,6 @@ function displayGallery2019() {
 	image37.setAttribute("src", "images/gallery-2019/2019-37.jpg");
 	image38.setAttribute("src", "images/gallery-2019/2019-38.jpg");
 	image39.setAttribute("src", "images/gallery-2019/2019-39.jpg");
-	
 	image40.setAttribute("src", "images/gallery-2019/2019-40.jpg");
 	image41.setAttribute("src", "images/gallery-2019/2019-41.jpg");
 	image42.setAttribute("src", "images/gallery-2019/2019-42.jpg");
@@ -463,7 +461,7 @@ function displayGallery2021() {
 	var image1 = document.getElementById('image-2021-gallery1');
 	var image2 = document.getElementById('image-2021-gallery2');
 	var image3 = document.getElementById('image-2021-gallery3');
-	var image4 = document.getElementById('image-2021-gallery5');
+	var image4 = document.getElementById('image-2021-gallery4');
 	var image5 = document.getElementById('image-2021-gallery5');
 	var image6 = document.getElementById('image-2021-gallery6');
 	var image7 = document.getElementById('image-2021-gallery7');
@@ -540,7 +538,7 @@ function displayGallery2022() {
 	var image1 = document.getElementById('image-2022-gallery1');
 	var image2 = document.getElementById('image-2022-gallery2');
 	var image3 = document.getElementById('image-2022-gallery3');
-	var image4 = document.getElementById('image-2022-gallery5');
+	var image4 = document.getElementById('image-2022-gallery4');
 	var image5 = document.getElementById('image-2022-gallery5');
 	var image6 = document.getElementById('image-2022-gallery6');
 	var image7 = document.getElementById('image-2022-gallery7');
@@ -576,16 +574,16 @@ function displayGallery2022() {
 	var image37 = document.getElementById('image-2022-gallery37');
 	var image38 = document.getElementById('image-2022-gallery38');
 	var image39 = document.getElementById('image-2022-gallery39');	
-	var image40 = document.getElementById('image-2022-gallery50');
-	var image41 = document.getElementById('image-2022-gallery51');
-	var image42 = document.getElementById('image-2022-gallery52');
-	var image43 = document.getElementById('image-2022-gallery53');
-	var image44 = document.getElementById('image-2022-gallery54');
-	var image45 = document.getElementById('image-2022-gallery55');
-	var image46 = document.getElementById('image-2022-gallery56');
-	var image47 = document.getElementById('image-2022-gallery57');
-	var image48 = document.getElementById('image-2022-gallery58');
-	var image49 = document.getElementById('image-2022-gallery59');	
+	var image40 = document.getElementById('image-2022-gallery40');
+	var image41 = document.getElementById('image-2022-gallery41');
+	var image42 = document.getElementById('image-2022-gallery42');
+	var image43 = document.getElementById('image-2022-gallery43');
+	var image44 = document.getElementById('image-2022-gallery44');
+	var image45 = document.getElementById('image-2022-gallery45');
+	var image46 = document.getElementById('image-2022-gallery46');
+	var image47 = document.getElementById('image-2022-gallery47');
+	var image48 = document.getElementById('image-2022-gallery48');
+	var image49 = document.getElementById('image-2022-gallery49');	
 	var image50 = document.getElementById('image-2022-gallery50');
 	var image51 = document.getElementById('image-2022-gallery51');
 	var image52 = document.getElementById('image-2022-gallery52');
