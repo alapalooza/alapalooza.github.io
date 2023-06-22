@@ -1,4 +1,4 @@
-const WEBSITE_NAME = "Alapalooza 2022";
+const WEBSITE_NAME = "Alapalooza 2023";
 
 const INDEX_HTML_PATH = "file:///D:/Dev/alapalooza/index.html"
 
