@@ -483,14 +483,14 @@ function displayGallery2016() {
 	image41.setAttribute("src", "images/gallery-2016/2016-41.jpg");
 	image42.setAttribute("src", "images/gallery-2016/2016-42.jpg");
 	image43.setAttribute("src", "images/gallery-2016/2016-43.jpg");
-	image44.setAttribute("src", "images/gallery-2016/2016-44.jpg");
-	image45.setAttribute("src", "images/gallery-2016/2016-45.jpg");
+	image44.setAttribute("src", "images/gallery-2016/2016-44.JPG");
+	image45.setAttribute("src", "images/gallery-2016/2016-45.JPG");
 	image46.setAttribute("src", "images/gallery-2016/2016-46.jpg");
 	image47.setAttribute("src", "images/gallery-2016/2016-47.jpg");
 	image48.setAttribute("src", "images/gallery-2016/2016-48.jpg");
 	image49.setAttribute("src", "images/gallery-2016/2016-49.jpg");
 	image50.setAttribute("src", "images/gallery-2016/2016-50.jpg");
-	image51.setAttribute("src", "images/gallery-2016/2016-51.jpg");
+	image51.setAttribute("src", "images/gallery-2016/2016-51.JPG");
 }
 
 function displayGallery2017() {
