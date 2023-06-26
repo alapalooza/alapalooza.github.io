@@ -28,7 +28,7 @@ function hideAllPages() {
 	page_sponsors.setAttribute("hidden", "hidden"); 
 	
 	var page_gallery2015 = document.getElementById("page-gallery-2015");
-	page_gallery2015.setAttribute("hidden", "hidden"); 
+	page_gallery201;5.setAttribute("hidden", "hidden"); 
 	
 	var page_gallery2016 = document.getElementById("page-gallery-2016");
 	page_gallery2016.setAttribute("hidden", "hidden"); 
@@ -583,7 +583,7 @@ function displayGallery2017() {
 	image6.setAttribute("src", "images/gallery-2017/2017-6.jpg");
 	image7.setAttribute("src", "images/gallery-2017/2017-7.jpg");
 	image8.setAttribute("src", "images/gallery-2017/2017-8.jpg");
-	image9.setAttribute("src", "images/gallery-2017/2017-9.jpg");
+	image9.setAttribute("src", "images/gallery-2017/2017-9.JPG");
 	image10.setAttribute("src", "images/gallery-2017/2017-10.jpg");
 	image11.setAttribute("src", "images/gallery-2017/2017-11.jpg");
 	image12.setAttribute("src", "images/gallery-2017/2017-12.jpg");
@@ -604,8 +604,8 @@ function displayGallery2017() {
 	image27.setAttribute("src", "images/gallery-2017/2017-27.jpg");
 	image28.setAttribute("src", "images/gallery-2017/2017-28.jpg");
 	image29.setAttribute("src", "images/gallery-2017/2017-29.jpg");
-	image30.setAttribute("src", "images/gallery-2017/2017-30.jpg");
-	image31.setAttribute("src", "images/gallery-2017/2017-31.jpg");
+	image30.setAttribute("src", "images/gallery-2017/2017-30.JPG");
+	image31.setAttribute("src", "images/gallery-2017/2017-31.JPG");
 	//image32.setAttribute("src", "images/gallery-2017/2017-32.jpg");
 	image33.setAttribute("src", "images/gallery-2017/2017-33.jpg");
 	image34.setAttribute("src", "images/gallery-2017/2017-34.jpg");
@@ -644,12 +644,12 @@ function displayGallery2017() {
 	image67.setAttribute("src", "images/gallery-2017/2017-67.jpg");
 	image68.setAttribute("src", "images/gallery-2017/2017-68.jpg");
 	image69.setAttribute("src", "images/gallery-2017/2017-69.jpg");
-	image70.setAttribute("src", "images/gallery-2017/2017-70.jpg");
-	image71.setAttribute("src", "images/gallery-2017/2017-71.jpg");
-	image72.setAttribute("src", "images/gallery-2017/2017-72.jpg");
-	image73.setAttribute("src", "images/gallery-2017/2017-73.jpg");
-	image74.setAttribute("src", "images/gallery-2017/2017-74.jpg");
-	image75.setAttribute("src", "images/gallery-2017/2017-75.jpg");
+	image70.setAttribute("src", "images/gallery-2017/2017-70.JPG");
+	image71.setAttribute("src", "images/gallery-2017/2017-71.JPG");
+	image72.setAttribute("src", "images/gallery-2017/2017-72.JPG");
+	image73.setAttribute("src", "images/gallery-2017/2017-73.JPG");
+	image74.setAttribute("src", "images/gallery-2017/2017-74.JPG");
+	image75.setAttribute("src", "images/gallery-2017/2017-75.JPG");
 }
 
 function displayGallery2018() {
