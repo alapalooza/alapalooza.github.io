@@ -94,7 +94,7 @@ function displayEventDetails() {
 	var image14 = document.getElementById('image-event-details14');
 	var image15 = document.getElementById('image-event-details15');
 	var image16 = document.getElementById('image-event-details16');
-	var image17 = document.getElementById('image-event-details17');
+	//var image17 = document.getElementById('image-event-details17');
 	var image18 = document.getElementById('image-event-details18');
 	
 	image1.setAttribute("src", "images/event-details/Lake1.jpg");
@@ -113,7 +113,7 @@ function displayEventDetails() {
 	image14.setAttribute("src", "images/event-details/Lake14.jpg");
 	image15.setAttribute("src", "images/event-details/Lake15.jpg");
 	image16.setAttribute("src", "images/event-details/Lake16.jpg");
-	image17.setAttribute("src", "images/event-details/Lake17.jpg");
+	//image17.setAttribute("src", "images/event-details/Lake17.jpg");
 	image18.setAttribute("src", "images/event-details/Lake18.jpg");
 
 }
