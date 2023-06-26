@@ -28,7 +28,7 @@ function hideAllPages() {
 	page_sponsors.setAttribute("hidden", "hidden"); 
 	
 	var page_gallery2015 = document.getElementById("page-gallery-2015");
-	page_gallery201;5.setAttribute("hidden", "hidden"); 
+	page_gallery2015.setAttribute("hidden", "hidden"); 
 	
 	var page_gallery2016 = document.getElementById("page-gallery-2016");
 	page_gallery2016.setAttribute("hidden", "hidden"); 
