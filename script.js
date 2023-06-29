@@ -253,15 +253,14 @@ function displayMerchandise() {
 	current_page.removeAttribute("hidden"); 
 	
 	
-	// var image1 = document.getElementById('image-merch1');
-	// var image2 = document.getElementById('image-merch2');
-	// var image3 = document.getElementById('image-merch3');
-	// var image4 = document.getElementById('image-merch4');
+	var image1 = document.getElementById('image-merch1');
+	var image2 = document.getElementById('image-merch2');
+	var image3 = document.getElementById('image-merch3');
 	
-	// image1.setAttribute("src", "images/merchandise/Alapalooza-Logo-Front.jpg");
-	// image2.setAttribute("src", "images/merchandise/Alapalooza-Logo-Back.jpg");
-	// image3.setAttribute("src", "images/merchandise/Alapalooza_Koozie_TNT_Mockup_June14-2022.jpg");
-	// image4.setAttribute("src", "images/merchandise/Alapalooza_T_TNT_Mockup_June14-2022.jpg");
+	
+	image1.setAttribute("src", "images/logo.jpg");
+	image2.setAttribute("src", "images/merchandise/tshirt.jpg");
+	image3.setAttribute("src", "images/merchandise/cup.jpg");
 
 }
 
