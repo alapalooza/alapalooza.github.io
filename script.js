@@ -256,11 +256,13 @@ function displayMerchandise() {
 	var image1 = document.getElementById('image-merch1');
 	var image2 = document.getElementById('image-merch2');
 	var image3 = document.getElementById('image-merch3');
+	var image4 = document.getElementById('image-merch4');
 	
 	
 	image1.setAttribute("src", "images/logo.jpg");
 	image2.setAttribute("src", "images/merchandise/tshirt.jpg");
-	image3.setAttribute("src", "images/merchandise/cup.jpg");
+	image3.setAttribute("src", "images/merchandise/cup1.jpg");
+	image4.setAttribute("src", "images/merchandise/cup2.jpg");
 
 }
 
