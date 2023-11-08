@@ -725,3 +725,27 @@ a.hide-carousel-text {
 	
 }
 
+.video {
+	width:80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.video-backdrop {
+	background-color: black;
+}
+
+.carousel-control-prev {
+	width: 10%;
+}
+.carousel-control-next {
+	width: 10%;
+}
+
+.small-buffer {
+	padding-top: 5%;
+}
+
+.large-buffer {
+	padding-top: 10%;
+}

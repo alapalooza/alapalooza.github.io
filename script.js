@@ -1080,6 +1080,14 @@ function displayGallery2022() {
 	image63.setAttribute("src", "images/gallery-2022/2022-63.jpg");
 }
 
+function displayGallery2023() {
+	hideAllPages();
+	document.title = WEBSITE_NAME + " - 2023 Gallery";
+	var current_page = document.getElementById("page-gallery-2023");
+	current_page.removeAttribute("hidden"); 
+	
+}
+
 function displayContact() {
 	hideAllPages();
 	document.title = WEBSITE_NAME + " - Contact";
@@ -1148,6 +1156,9 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2022" || window.location.href == "https://alapalooza.github.io/#gallery-2022" || window.location.href == "domain.com#gallery-2022"){
 		displayGallery2022();
+	}
+	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2023" || window.location.href == "https://alapalooza.github.io/#gallery-2023" || window.location.href == "domain.com#gallery-2023"){
+		displayGallery2023();
 	}
 	else if(window.location.href == INDEX_HTML_PATH + "#contact" || window.location.href == "https://alapalooza.github.io/#contact" || window.location.href == "domain.com#contact") {
 		displayContact();
