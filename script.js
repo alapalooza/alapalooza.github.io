@@ -50,6 +50,9 @@ function hideAllPages() {
 	
 	var page_gallery2022 = document.getElementById("page-gallery-2022");
 	page_gallery2022.setAttribute("hidden", "hidden"); 
+		
+	var page_gallery2023 = document.getElementById("page-gallery-2023");
+	page_gallery2023.setAttribute("hidden", "hidden"); 
 	
 	var page_contact = document.getElementById("page-contact");
 	page_contact.setAttribute("hidden", "hidden");
