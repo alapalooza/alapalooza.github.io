@@ -162,23 +162,17 @@ function displayEntertainment() {
 	var current_page = document.getElementById("page-entertainment");
 	current_page.removeAttribute("hidden"); 
 	
-	var image1 = document.getElementById('image-ent-dw1');
-	var image2 = document.getElementById('image-ent-dw2');
-	var image3 = document.getElementById('image-ent-dw3');
-	var image4 = document.getElementById('image-ent-dw4');
-	var image5 = document.getElementById('image-ent-dw5');
-	var image6 = document.getElementById('image-ent-dw6');
-	var image7 = document.getElementById('image-ent-dw7');
-	var image8 = document.getElementById('image-ent-dw8');
+	var image1 = document.getElementById('image-ent-sw1');
+	var image2 = document.getElementById('image-ent-sw2');
+	var image3 = document.getElementById('image-ent-sw3');
+	var image4 = document.getElementById('image-ent-sw4');
+	var image5 = document.getElementById('image-ent-sw5');
 	
-	image1.setAttribute("src", "images/entertainment/dylan-wallace/Dylan1.jpg");
-	image2.setAttribute("src", "images/entertainment/dylan-wallace/Dylan2.jpg");
-	image3.setAttribute("src", "images/entertainment/dylan-wallace/Dylan3.jpg");
-	image4.setAttribute("src", "images/entertainment/dylan-wallace/Dylan4.jpg");
-	image5.setAttribute("src", "images/entertainment/dylan-wallace/Dylan5.jpg");
-	image6.setAttribute("src", "images/entertainment/dylan-wallace/Dylan6.jpg");
-	image7.setAttribute("src", "images/entertainment/dylan-wallace/Dylan7.jpg");
-	image8.setAttribute("src", "images/entertainment/dylan-wallace/Dylan8.jpg");
+	image1.setAttribute("src", "images/entertainment/steve-wallace/1.jpg");
+	image2.setAttribute("src", "images/entertainment/steve-wallace/2.jpg");
+	image3.setAttribute("src", "images/entertainment/steve-wallace/3.jpg");
+	image4.setAttribute("src", "images/entertainment/steve-wallace/4.jpg");
+	image5.setAttribute("src", "images/entertainment/steve-wallace/5.jpg");
 	
 	
 	var image1 = document.getElementById('image-ent-fs1');
@@ -193,59 +187,59 @@ function displayEntertainment() {
 	var image10 = document.getElementById('image-ent-fs10');
 	var image11 = document.getElementById('image-ent-fs11');
 	var image12 = document.getElementById('image-ent-fs12');
+	var image13 = document.getElementById('image-ent-fs13');
 	
-	image1.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix1.jpg");
-	image2.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix2.jpg");
-	image3.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix3.jpg");
-	image4.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix4.jpg");
-	image5.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix5.jpg");
-	image6.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix6.jpg");
-	image7.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix7.jpg");
-	image8.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix8.jpg");
-	image9.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix9.jpg");
-	image10.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix10.jpg");
-	image11.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix11.jpg");
-	image12.setAttribute("src", "images/entertainment/fiddlestix/Fiddlestix12.jpg");
+	image1.setAttribute("src", "images/entertainment/fiddlestix/1.jpg");
+	image2.setAttribute("src", "images/entertainment/fiddlestix/2.jpg");
+	image3.setAttribute("src", "images/entertainment/fiddlestix/3.jpg");
+	image4.setAttribute("src", "images/entertainment/fiddlestix/4.jpg");
+	image5.setAttribute("src", "images/entertainment/fiddlestix/5.jpg");
+	image6.setAttribute("src", "images/entertainment/fiddlestix/6.jpg");
+	image7.setAttribute("src", "images/entertainment/fiddlestix/7.jpg");
+	image8.setAttribute("src", "images/entertainment/fiddlestix/8.jpg");
+	image9.setAttribute("src", "images/entertainment/fiddlestix/9.jpg");
+	image10.setAttribute("src", "images/entertainment/fiddlestix/10.jpg");
+	image11.setAttribute("src", "images/entertainment/fiddlestix/11.jpg");
+	image12.setAttribute("src", "images/entertainment/fiddlestix/12.jpg");
+	image13.setAttribute("src", "images/entertainment/fiddlestix/13.jpg");
+	
+	var image1 = document.getElementById('image-ent-mh1');
+	var image2 = document.getElementById('image-ent-mh2');
+	var image3 = document.getElementById('image-ent-mh3');
+	var image4 = document.getElementById('image-ent-mh4');
+	var image5 = document.getElementById('image-ent-mh5');
+	
+	image1.setAttribute("src", "images/entertainment/michelle-hedley/1.jpg");
+	image2.setAttribute("src", "images/entertainment/michelle-hedley/2.jpg");
+	image3.setAttribute("src", "images/entertainment/michelle-hedley/3.jpg");
+	image4.setAttribute("src", "images/entertainment/michelle-hedley/4.jpg");
+	image5.setAttribute("src", "images/entertainment/michelle-hedley/5.jpg");
 	
 	var image1 = document.getElementById('image-ent-td1');
 	var image2 = document.getElementById('image-ent-td2');
 	var image3 = document.getElementById('image-ent-td3');
 	var image4 = document.getElementById('image-ent-td4');
-	var image5 = document.getElementById('image-ent-td5');
-	var image6 = document.getElementById('image-ent-td6');
-	var image7 = document.getElementById('image-ent-td7');
 	
-	image1.setAttribute("src", "images/entertainment/the-duomatics/Duomatics1.jpg");
-	image2.setAttribute("src", "images/entertainment/the-duomatics/Duomatics2.jpg");
-	image3.setAttribute("src", "images/entertainment/the-duomatics/Duomatics3.jpg");
-	image4.setAttribute("src", "images/entertainment/the-duomatics/Duomatics4.jpg");
-	image5.setAttribute("src", "images/entertainment/the-duomatics/Duomatics5.jpg");
-	image6.setAttribute("src", "images/entertainment/the-duomatics/Duomatics6.jpg");
-	image7.setAttribute("src", "images/entertainment/the-duomatics/Duomatics7.jpg");
+	image1.setAttribute("src", "images/entertainment/tone-deaf/1.jpg");
+	image2.setAttribute("src", "images/entertainment/tone-deaf/2.jpg");
+	image3.setAttribute("src", "images/entertainment/tone-deaf/3.jpg");
+	image4.setAttribute("src", "images/entertainment/tone-deaf/4.jpg");
 	
-	var image1 = document.getElementById('image-ent-kp1');
-	var image2 = document.getElementById('image-ent-kp2');
-	var image3 = document.getElementById('image-ent-kp3');
-	var image4 = document.getElementById('image-ent-kp4');
-	var image5 = document.getElementById('image-ent-kp5');
-	var image6 = document.getElementById('image-ent-kp6');
-	var image7 = document.getElementById('image-ent-kp7');
-	var image8 = document.getElementById('image-ent-kp8');
-	var image9 = document.getElementById('image-ent-kp9');
-	var image10 = document.getElementById('image-ent-kp10');
-	var image11 = document.getElementById('image-ent-kp11');
+	var image1 = document.getElementById('image-ent-tduo1');
+	var image2 = document.getElementById('image-ent-tduo2');
+	var image3 = document.getElementById('image-ent-tduo3');
+	var image4 = document.getElementById('image-ent-tduo4');
+	var image5 = document.getElementById('image-ent-tduo5');
+	var image6 = document.getElementById('image-ent-tduo6');
+	var image7 = document.getElementById('image-ent-tduo7');
 	
-	image1.setAttribute("src", "images/entertainment/kristen-prince/KP1.jpg");
-	image2.setAttribute("src", "images/entertainment/kristen-prince/KP2.jpg");
-	image3.setAttribute("src", "images/entertainment/kristen-prince/KP3.jpg");
-	image4.setAttribute("src", "images/entertainment/kristen-prince/KP4.jpg");
-	image5.setAttribute("src", "images/entertainment/kristen-prince/KP5.jpg");
-	image6.setAttribute("src", "images/entertainment/kristen-prince/KP6.jpg");
-	image7.setAttribute("src", "images/entertainment/kristen-prince/KP7.jpg");
-	image8.setAttribute("src", "images/entertainment/kristen-prince/KP8.jpg");
-	image9.setAttribute("src", "images/entertainment/kristen-prince/KP9.jpg");
-	image10.setAttribute("src", "images/entertainment/kristen-prince/KP10.jpg");
-	image11.setAttribute("src", "images/entertainment/kristen-prince/KP11.jpg");
+	image1.setAttribute("src", "images/entertainment/the-duomatics/1.jpg");
+	image2.setAttribute("src", "images/entertainment/the-duomatics/2.jpg");
+	image3.setAttribute("src", "images/entertainment/the-duomatics/3.jpg");
+	image4.setAttribute("src", "images/entertainment/the-duomatics/4.jpg");
+	image5.setAttribute("src", "images/entertainment/the-duomatics/5.jpg");
+	image6.setAttribute("src", "images/entertainment/the-duomatics/6.jpg");
+	image7.setAttribute("src", "images/entertainment/the-duomatics/7.jpg");
 
 }
 
@@ -258,14 +252,10 @@ function displayMerchandise() {
 	
 	var image1 = document.getElementById('image-merch1');
 	var image2 = document.getElementById('image-merch2');
-	var image3 = document.getElementById('image-merch3');
-	var image4 = document.getElementById('image-merch4');
 	
 	
-	image1.setAttribute("src", "images/logo.jpg");
+	image1.setAttribute("src", "images/logo.png");
 	image2.setAttribute("src", "images/merchandise/tshirt.jpg");
-	image3.setAttribute("src", "images/merchandise/cup1.jpg");
-	image4.setAttribute("src", "images/merchandise/cup2.jpg");
 
 }
 
