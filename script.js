@@ -1,4 +1,4 @@
-const WEBSITE_NAME = "Alapalooza 2023";
+const WEBSITE_NAME = "Alapalooza";
 
 const INDEX_HTML_PATH = "file:///D:/Dev/alapalooza/index.html"
 
@@ -275,6 +275,9 @@ function displaySponsors() {
 	var image8 = document.getElementById('image-sponsor8');
 	var image9 = document.getElementById('image-sponsor9');
 	var image10 = document.getElementById('image-sponsor10');
+	var image11 = document.getElementById('image-sponsor11');
+	var image12 = document.getElementById('image-sponsor12');
+	var image13 = document.getElementById('image-sponsor13');
 	
 	image1.setAttribute("src", "images/sponsors/logo_alt.png");
 	image2.setAttribute("src", "images/sponsors/Rave.jpg");
@@ -286,6 +289,9 @@ function displaySponsors() {
 	image8.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
 	image9.setAttribute("src", "images/sponsors/Fling.jpg");
 	image10.setAttribute("src", "images/sponsors/mccomb.png");
+	image11.setAttribute("src", "images/sponsors/Biasi-Brothers.png");
+	image12.setAttribute("src", "images/sponsors/ICON-Digital.jpg");
+	image13.setAttribute("src", "images/sponsors/Tall-Pines-Realty.jpg");
 }
 
 function displayGallery() {
