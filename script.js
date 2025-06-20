@@ -204,7 +204,7 @@ function displayEntertainment() {
 	var image2 = document.getElementById('image-ent-gr2');
 	var image3 = document.getElementById('image-ent-gr3');
 	
-	image1.setAttribute("src", "images/entertainment/galactic-redemption/gr1.jpg");
+	image1.setAttribute("src", "images/entertainment/galactic-redemption/gr1.png");
 	image2.setAttribute("src", "images/entertainment/galactic-redemption/gr2.jpg");
 	image3.setAttribute("src", "images/entertainment/galactic-redemption/gr3.jpg");
 	
