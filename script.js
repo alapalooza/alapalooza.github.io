@@ -2,12 +2,6 @@ const WEBSITE_NAME = "Alapalooza";
 
 const INDEX_HTML_PATH = "file:///D:/Dev/alapalooza/index.html"
 
-var is_dw_text_hidden = false;
-var is_fs_text_hidden = false;
-var is_tmf_text_hidden = false;
-var is_td_text_hidden = false;
-var is_kp_text_hidden = false;
-
 function hideAllPages() {
 	var page_index = document.getElementById("page-index");
 	page_index.setAttribute("hidden", "hidden");
@@ -53,6 +47,9 @@ function hideAllPages() {
 		
 	var page_gallery2023 = document.getElementById("page-gallery-2023");
 	page_gallery2023.setAttribute("hidden", "hidden"); 
+		
+	var page_gallery2024 = document.getElementById("page-gallery-2024");
+	page_gallery2024.setAttribute("hidden", "hidden"); 
 	
 	var page_contact = document.getElementById("page-contact");
 	page_contact.setAttribute("hidden", "hidden");
@@ -162,69 +159,73 @@ function displayEntertainment() {
 	var current_page = document.getElementById("page-entertainment");
 	current_page.removeAttribute("hidden"); 
 	
-	var image1 = document.getElementById('image-ent-sw1');
-	var image2 = document.getElementById('image-ent-sw2');
-	var image3 = document.getElementById('image-ent-sw3');
-	var image4 = document.getElementById('image-ent-sw4');
-	var image5 = document.getElementById('image-ent-sw5');
+	var image1 = document.getElementById('image-ent-ms1');
+	var image2 = document.getElementById('image-ent-ms2');
+	var image3 = document.getElementById('image-ent-ms3');
+	var image4 = document.getElementById('image-ent-ms4');
+	var image5 = document.getElementById('image-ent-ms5');
+	var image6 = document.getElementById('image-ent-ms6');
 	
-	image1.setAttribute("src", "images/entertainment/steve-wallace/1.jpg");
-	image2.setAttribute("src", "images/entertainment/steve-wallace/2.jpg");
-	image3.setAttribute("src", "images/entertainment/steve-wallace/3.jpg");
-	image4.setAttribute("src", "images/entertainment/steve-wallace/4.jpg");
-	image5.setAttribute("src", "images/entertainment/steve-wallace/5.jpg");
+	image1.setAttribute("src", "images/entertainment/mike-stevenson/ms1.jpg");
+	image2.setAttribute("src", "images/entertainment/mike-stevenson/ms2.jpg");
+	image3.setAttribute("src", "images/entertainment/mike-stevenson/ms3.jpg");
+	image4.setAttribute("src", "images/entertainment/mike-stevenson/ms4.jpg");
+	image5.setAttribute("src", "images/entertainment/mike-stevenson/ms5.jpg");
+	image6.setAttribute("src", "images/entertainment/mike-stevenson/ms6.jpg");
 	
 	
-	var image1 = document.getElementById('image-ent-fs1');
-	var image2 = document.getElementById('image-ent-fs2');
-	var image3 = document.getElementById('image-ent-fs3');
-	var image4 = document.getElementById('image-ent-fs4');
-	var image5 = document.getElementById('image-ent-fs5');
-	var image6 = document.getElementById('image-ent-fs6');
-	var image7 = document.getElementById('image-ent-fs7');
-	var image8 = document.getElementById('image-ent-fs8');
-	var image9 = document.getElementById('image-ent-fs9');
-	var image10 = document.getElementById('image-ent-fs10');
-	var image11 = document.getElementById('image-ent-fs11');
-	var image12 = document.getElementById('image-ent-fs12');
-	var image13 = document.getElementById('image-ent-fs13');
+	var image1 = document.getElementById('image-ent-lm1');
+	var image2 = document.getElementById('image-ent-lm2');
+	var image3 = document.getElementById('image-ent-lm3');
+	var image4 = document.getElementById('image-ent-lm4');
+	var image5 = document.getElementById('image-ent-lm5');
+	var image6 = document.getElementById('image-ent-lm6');
+	var image7 = document.getElementById('image-ent-lm7');
 	
-	image1.setAttribute("src", "images/entertainment/fiddlestix/1.jpg");
-	image2.setAttribute("src", "images/entertainment/fiddlestix/2.jpg");
-	image3.setAttribute("src", "images/entertainment/fiddlestix/3.jpg");
-	image4.setAttribute("src", "images/entertainment/fiddlestix/4.jpg");
-	image5.setAttribute("src", "images/entertainment/fiddlestix/5.jpg");
-	image6.setAttribute("src", "images/entertainment/fiddlestix/6.jpg");
-	image7.setAttribute("src", "images/entertainment/fiddlestix/7.jpg");
-	image8.setAttribute("src", "images/entertainment/fiddlestix/8.jpg");
-	image9.setAttribute("src", "images/entertainment/fiddlestix/9.jpg");
-	image10.setAttribute("src", "images/entertainment/fiddlestix/10.jpg");
-	image11.setAttribute("src", "images/entertainment/fiddlestix/11.jpg");
-	image12.setAttribute("src", "images/entertainment/fiddlestix/12.jpg");
-	image13.setAttribute("src", "images/entertainment/fiddlestix/13.jpg");
+	image1.setAttribute("src", "images/entertainment/lou-moore/lm1.jpg");
+	image2.setAttribute("src", "images/entertainment/lou-moore/lm2.jpg");
+	image3.setAttribute("src", "images/entertainment/lou-moore/lm3.jpg");
+	image4.setAttribute("src", "images/entertainment/lou-moore/lm4.jpg");
+	image5.setAttribute("src", "images/entertainment/lou-moore/lm5.jpg");
+	image6.setAttribute("src", "images/entertainment/lou-moore/lm6.jpg");
+	image7.setAttribute("src", "images/entertainment/lou-moore/lm7.jpg");
 	
-	var image1 = document.getElementById('image-ent-mh1');
-	var image2 = document.getElementById('image-ent-mh2');
-	var image3 = document.getElementById('image-ent-mh3');
-	var image4 = document.getElementById('image-ent-mh4');
-	var image5 = document.getElementById('image-ent-mh5');
+	var image1 = document.getElementById('image-ent-vh1');
+	var image2 = document.getElementById('image-ent-vh2');
+	var image3 = document.getElementById('image-ent-vh3');
+	var image4 = document.getElementById('image-ent-vh4');
 	
-	image1.setAttribute("src", "images/entertainment/michelle-hedley/1.jpg");
-	image2.setAttribute("src", "images/entertainment/michelle-hedley/2.jpg");
-	image3.setAttribute("src", "images/entertainment/michelle-hedley/3.jpg");
-	image4.setAttribute("src", "images/entertainment/michelle-hedley/4.jpg");
-	image5.setAttribute("src", "images/entertainment/michelle-hedley/5.jpg");
+	image1.setAttribute("src", "images/entertainment/vh/vh1.jpg");
+	image2.setAttribute("src", "images/entertainment/vh/vh2.jpg");
+	image3.setAttribute("src", "images/entertainment/vh/vh3.jpg");
+	image4.setAttribute("src", "images/entertainment/vh/vh4.jpg");
+	
+	var image1 = document.getElementById('image-ent-gr1');
+	var image2 = document.getElementById('image-ent-gr2');
+	var image3 = document.getElementById('image-ent-gr3');
+	
+	image1.setAttribute("src", "images/entertainment/galactic-redemption/gr1.jpg");
+	image2.setAttribute("src", "images/entertainment/galactic-redemption/gr2.jpg");
+	image3.setAttribute("src", "images/entertainment/galactic-redemption/gr3.jpg");
 	
 	var image1 = document.getElementById('image-ent-td1');
 	var image2 = document.getElementById('image-ent-td2');
 	var image3 = document.getElementById('image-ent-td3');
 	var image4 = document.getElementById('image-ent-td4');
+	var image5 = document.getElementById('image-ent-td5');
+	var image6 = document.getElementById('image-ent-td6');
+	var image7 = document.getElementById('image-ent-td7');
+	var image8 = document.getElementById('image-ent-td8');
 	
-	image1.setAttribute("src", "images/entertainment/tone-deaf/1.jpg");
-	image2.setAttribute("src", "images/entertainment/tone-deaf/2.jpg");
-	image3.setAttribute("src", "images/entertainment/tone-deaf/3.jpg");
-	image4.setAttribute("src", "images/entertainment/tone-deaf/4.jpg");
-	
+	image1.setAttribute("src", "images/entertainment/tone-deaf/td1.jpg");
+	image2.setAttribute("src", "images/entertainment/tone-deaf/td2.jpg");
+	image3.setAttribute("src", "images/entertainment/tone-deaf/td3.jpg");
+	image4.setAttribute("src", "images/entertainment/tone-deaf/td4.jpg");
+	image5.setAttribute("src", "images/entertainment/tone-deaf/td5.jpg");
+	image6.setAttribute("src", "images/entertainment/tone-deaf/td6.jpg");
+	image7.setAttribute("src", "images/entertainment/tone-deaf/td7.jpg");
+	image8.setAttribute("src", "images/entertainment/tone-deaf/td8.jpg");
+	/*
 	var image1 = document.getElementById('image-ent-tduo1');
 	var image2 = document.getElementById('image-ent-tduo2');
 	var image3 = document.getElementById('image-ent-tduo3');
@@ -240,7 +241,7 @@ function displayEntertainment() {
 	image5.setAttribute("src", "images/entertainment/the-duomatics/5.jpg");
 	image6.setAttribute("src", "images/entertainment/the-duomatics/6.jpg");
 	image7.setAttribute("src", "images/entertainment/the-duomatics/7.jpg");
-
+*/
 }
 
 function displayMerchandise() {
@@ -255,7 +256,7 @@ function displayMerchandise() {
 	
 	
 	image1.setAttribute("src", "images/logo.png");
-	image2.setAttribute("src", "images/merchandise/tshirt.jpg");
+	image2.setAttribute("src", "images/merchandise/tshirt.png");
 
 }
 
@@ -272,26 +273,23 @@ function displaySponsors() {
 	var image5 = document.getElementById('image-sponsor5');
 	var image6 = document.getElementById('image-sponsor6');
 	var image7 = document.getElementById('image-sponsor7');
-	var image8 = document.getElementById('image-sponsor8');
+	var image8 = document.getElementById('image-sponsor8');/*
 	var image9 = document.getElementById('image-sponsor9');
 	var image10 = document.getElementById('image-sponsor10');
 	var image11 = document.getElementById('image-sponsor11');
 	var image12 = document.getElementById('image-sponsor12');
-	var image13 = document.getElementById('image-sponsor13');
+	var image13 = document.getElementById('image-sponsor13');*/
 	
-	image1.setAttribute("src", "images/sponsors/logo_alt.png");
-	image2.setAttribute("src", "images/sponsors/Rave.jpg");
-	image3.setAttribute("src", "images/sponsors/TNT.png");
-	image4.setAttribute("src", "images/sponsors/hpllogo.gif");
-	image5.setAttribute("src", "images/sponsors/Axiom-Audio.jpg");
-	image6.setAttribute("src", "images/sponsors/Echelon-Environmental.jpg");
-	image7.setAttribute("src", "images/sponsors/Lake-Life-Leisure.jpg");
-	image8.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
-	image9.setAttribute("src", "images/sponsors/Fling.jpg");
-	image10.setAttribute("src", "images/sponsors/mccomb.png");
-	image11.setAttribute("src", "images/sponsors/Biasi-Brothers.jpg");
-	image12.setAttribute("src", "images/sponsors/ICON-Digital.jpg");
-	image13.setAttribute("src", "images/sponsors/Tall-Pines-Realty.jpg");
+	
+	image1.setAttribute("src", "images/sponsors/TNT.png");
+	image2.setAttribute("src", "images/sponsors/Echelon-Environmental.jpg");
+	image3.setAttribute("src", "images/sponsors/hpllogo.gif");
+	image4.setAttribute("src", "images/sponsors/Axiom-Audio.jpg");
+	image5.setAttribute("src", "images/sponsors/Cleaning-Central.jpg");
+	image6.setAttribute("src", "images/sponsors/logo_alt.png");
+	image7.setAttribute("src", "images/sponsors/Rave.jpg");
+	image8.setAttribute("src", "images/sponsors/Fling.jpg");
+	image9.setAttribute("src", "images/sponsors/mccomb.png");
 }
 
 function displayGallery() {
@@ -1339,6 +1337,183 @@ function displayGallery2023() {
 	
 }
 
+
+function displayGallery2024() {
+	hideAllPages();
+	document.title = WEBSITE_NAME + " - 2024 Gallery";
+	var current_page = document.getElementById("page-gallery-2024");
+	current_page.removeAttribute("hidden"); 
+	
+	var image1 = document.getElementById('image-2024-gallery1');
+	var image2 = document.getElementById('image-2024-gallery2');
+	var image3 = document.getElementById('image-2024-gallery3');
+	var image4 = document.getElementById('image-2024-gallery4');
+	var image5 = document.getElementById('image-2024-gallery5');
+	var image6 = document.getElementById('image-2024-gallery6');
+	var image7 = document.getElementById('image-2024-gallery7');
+	var image8 = document.getElementById('image-2024-gallery8');
+	var image9 = document.getElementById('image-2024-gallery9');
+	var image10 = document.getElementById('image-2024-gallery10');
+	var image11 = document.getElementById('image-2024-gallery11');
+	var image12 = document.getElementById('image-2024-gallery12');
+	var image13 = document.getElementById('image-2024-gallery13');
+	var image14 = document.getElementById('image-2024-gallery14');
+	var image15 = document.getElementById('image-2024-gallery15');
+	var image16 = document.getElementById('image-2024-gallery16');
+	var image17 = document.getElementById('image-2024-gallery17');
+	var image18 = document.getElementById('image-2024-gallery18');
+	var image19 = document.getElementById('image-2024-gallery19');
+	var image20 = document.getElementById('image-2024-gallery20');
+	var image21 = document.getElementById('image-2024-gallery21');
+	var image22 = document.getElementById('image-2024-gallery22');
+	var image23 = document.getElementById('image-2024-gallery23');
+	var image24 = document.getElementById('image-2024-gallery24');
+	var image25 = document.getElementById('image-2024-gallery25');
+	var image26 = document.getElementById('image-2024-gallery26');
+	var image27 = document.getElementById('image-2024-gallery27');
+	var image28 = document.getElementById('image-2024-gallery28');
+	var image29 = document.getElementById('image-2024-gallery29');
+	var image30 = document.getElementById('image-2024-gallery30');
+	var image31 = document.getElementById('image-2024-gallery31');
+	var image32 = document.getElementById('image-2024-gallery32');
+	var image33 = document.getElementById('image-2024-gallery33');
+	var image34 = document.getElementById('image-2024-gallery34');
+	var image35 = document.getElementById('image-2024-gallery35');
+	var image36 = document.getElementById('image-2024-gallery36');
+	var image37 = document.getElementById('image-2024-gallery37');
+	var image38 = document.getElementById('image-2024-gallery38');
+	var image39 = document.getElementById('image-2024-gallery39');	
+	var image40 = document.getElementById('image-2024-gallery40');
+	var image41 = document.getElementById('image-2024-gallery41');
+	var image42 = document.getElementById('image-2024-gallery42');
+	var image43 = document.getElementById('image-2024-gallery43');
+	var image44 = document.getElementById('image-2024-gallery44');
+	var image45 = document.getElementById('image-2024-gallery45');
+	var image46 = document.getElementById('image-2024-gallery46');
+	var image47 = document.getElementById('image-2024-gallery47');
+	var image48 = document.getElementById('image-2024-gallery48');
+	var image49 = document.getElementById('image-2024-gallery49');	
+	var image50 = document.getElementById('image-2024-gallery50');
+	var image51 = document.getElementById('image-2024-gallery51');
+	var image52 = document.getElementById('image-2024-gallery52');
+	var image53 = document.getElementById('image-2024-gallery53');
+	var image54 = document.getElementById('image-2024-gallery54');
+	var image55 = document.getElementById('image-2024-gallery55');
+	var image56 = document.getElementById('image-2024-gallery56');
+	var image57 = document.getElementById('image-2024-gallery57');
+	var image58 = document.getElementById('image-2024-gallery58');
+	var image59 = document.getElementById('image-2024-gallery59');
+	var image60 = document.getElementById('image-2024-gallery60');
+	var image61 = document.getElementById('image-2024-gallery61');
+	var image62 = document.getElementById('image-2024-gallery62');
+	var image63 = document.getElementById('image-2024-gallery63');
+	var image64 = document.getElementById('image-2024-gallery64');
+	var image65 = document.getElementById('image-2024-gallery65');
+	var image66 = document.getElementById('image-2024-gallery66');
+	var image67 = document.getElementById('image-2024-gallery67');
+	var image68 = document.getElementById('image-2024-gallery68');
+	var image69 = document.getElementById('image-2024-gallery69');
+	var image70 = document.getElementById('image-2024-gallery70');
+	var image71 = document.getElementById('image-2024-gallery71');
+	var image72 = document.getElementById('image-2024-gallery72');
+	var image73 = document.getElementById('image-2024-gallery73');
+	var image74 = document.getElementById('image-2024-gallery74');
+	var image75 = document.getElementById('image-2024-gallery75');
+	var image76 = document.getElementById('image-2024-gallery76');
+	var image77 = document.getElementById('image-2024-gallery77');
+	var image78 = document.getElementById('image-2024-gallery78');
+	var image79 = document.getElementById('image-2024-gallery79');
+	var image80 = document.getElementById('image-2024-gallery80');
+	var image81 = document.getElementById('image-2024-gallery81');
+	var image82 = document.getElementById('image-2024-gallery82');
+	var image83 = document.getElementById('image-2024-gallery83');
+	
+	image1.setAttribute("src", "images/gallery-2024/1.jpg");
+	image2.setAttribute("src", "images/gallery-2024/2.jpg");
+	image3.setAttribute("src", "images/gallery-2024/3.jpg");
+	image4.setAttribute("src", "images/gallery-2024/4.jpg");
+	image5.setAttribute("src", "images/gallery-2024/5.jpg");
+	image6.setAttribute("src", "images/gallery-2024/6.jpg");
+	image7.setAttribute("src", "images/gallery-2024/7.jpg");
+	image8.setAttribute("src", "images/gallery-2024/8.jpg");
+	image9.setAttribute("src", "images/gallery-2024/9.jpg");
+	image10.setAttribute("src", "images/gallery-2024/10.jpg");
+	image11.setAttribute("src", "images/gallery-2024/11.jpg");
+	image12.setAttribute("src", "images/gallery-2024/12.jpg");
+	image13.setAttribute("src", "images/gallery-2024/13.jpg");
+	image14.setAttribute("src", "images/gallery-2024/14.jpg");
+	image15.setAttribute("src", "images/gallery-2024/15.jpg");
+	image16.setAttribute("src", "images/gallery-2024/16.jpg");
+	image17.setAttribute("src", "images/gallery-2024/17.jpg");
+	image18.setAttribute("src", "images/gallery-2024/18.jpg");
+	image19.setAttribute("src", "images/gallery-2024/19.jpg");
+	image20.setAttribute("src", "images/gallery-2024/20.jpg");
+	image21.setAttribute("src", "images/gallery-2024/21.jpg");
+	image22.setAttribute("src", "images/gallery-2024/22.jpg");
+	image23.setAttribute("src", "images/gallery-2024/23.jpg");
+	image24.setAttribute("src", "images/gallery-2024/24.jpg");
+	image25.setAttribute("src", "images/gallery-2024/25.jpg");
+	image26.setAttribute("src", "images/gallery-2024/26.jpg");
+	image27.setAttribute("src", "images/gallery-2024/27.jpg");
+	image28.setAttribute("src", "images/gallery-2024/28.jpg");
+	image29.setAttribute("src", "images/gallery-2024/29.jpg");
+	image30.setAttribute("src", "images/gallery-2024/30.jpg");
+	image31.setAttribute("src", "images/gallery-2024/31.jpg");
+	image32.setAttribute("src", "images/gallery-2024/32.jpg");
+	image33.setAttribute("src", "images/gallery-2024/33.jpg");
+	image34.setAttribute("src", "images/gallery-2024/34.jpg");
+	image35.setAttribute("src", "images/gallery-2024/35.jpg");
+	image36.setAttribute("src", "images/gallery-2024/36.jpg");
+	image37.setAttribute("src", "images/gallery-2024/37.jpg");
+	image38.setAttribute("src", "images/gallery-2024/38.jpg");
+	image39.setAttribute("src", "images/gallery-2024/39.jpg");
+	image40.setAttribute("src", "images/gallery-2024/40.jpg");
+	image41.setAttribute("src", "images/gallery-2024/41.jpg");
+	image42.setAttribute("src", "images/gallery-2024/42.jpg");
+	image43.setAttribute("src", "images/gallery-2024/43.jpg");
+	image44.setAttribute("src", "images/gallery-2024/44.jpg");
+	image45.setAttribute("src", "images/gallery-2024/45.jpg");
+	image46.setAttribute("src", "images/gallery-2024/46.jpg");
+	image47.setAttribute("src", "images/gallery-2024/47.jpg");
+	image48.setAttribute("src", "images/gallery-2024/48.jpg");
+	image49.setAttribute("src", "images/gallery-2024/49.jpg");
+	image50.setAttribute("src", "images/gallery-2024/50.jpg");
+	image51.setAttribute("src", "images/gallery-2024/51.jpg");
+	image52.setAttribute("src", "images/gallery-2024/52.jpg");
+	image53.setAttribute("src", "images/gallery-2024/53.jpg");
+	image54.setAttribute("src", "images/gallery-2024/54.jpg");
+	image55.setAttribute("src", "images/gallery-2024/55.jpg");
+	image56.setAttribute("src", "images/gallery-2024/56.jpg");
+	image57.setAttribute("src", "images/gallery-2024/57.jpg");
+	image58.setAttribute("src", "images/gallery-2024/58.jpg");
+	image59.setAttribute("src", "images/gallery-2024/59.jpg");
+	image60.setAttribute("src", "images/gallery-2024/60.jpg");
+	image61.setAttribute("src", "images/gallery-2024/61.jpg");
+	image62.setAttribute("src", "images/gallery-2024/62.jpg");
+	image63.setAttribute("src", "images/gallery-2024/63.jpg");
+	image64.setAttribute("src", "images/gallery-2024/64.jpg");
+	image65.setAttribute("src", "images/gallery-2024/65.jpg");
+	image66.setAttribute("src", "images/gallery-2024/66.jpg");
+	image67.setAttribute("src", "images/gallery-2024/67.jpg");
+	image68.setAttribute("src", "images/gallery-2024/68.jpg");
+	image69.setAttribute("src", "images/gallery-2024/69.jpg");
+	image70.setAttribute("src", "images/gallery-2024/70.jpg");
+	image71.setAttribute("src", "images/gallery-2024/71.jpg");
+	image72.setAttribute("src", "images/gallery-2024/72.jpg");
+	image73.setAttribute("src", "images/gallery-2024/73.jpg");
+	image74.setAttribute("src", "images/gallery-2024/74.jpg");
+	image75.setAttribute("src", "images/gallery-2024/75.jpg");
+	image76.setAttribute("src", "images/gallery-2024/76.png");
+	image77.setAttribute("src", "images/gallery-2024/77.jpeg");
+	image78.setAttribute("src", "images/gallery-2024/78.jpeg");
+	image79.setAttribute("src", "images/gallery-2024/79.jpeg");
+	image80.setAttribute("src", "images/gallery-2024/80.jpeg");
+	image81.setAttribute("src", "images/gallery-2024/81.jpeg");
+	image82.setAttribute("src", "images/gallery-2024/82.jpeg");
+	image83.setAttribute("src", "images/gallery-2024/83.jpeg");
+	
+}
+
 function displayContact() {
 	hideAllPages();
 	document.title = WEBSITE_NAME + " - Contact";
@@ -1411,71 +1586,13 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2023" || window.location.href == "https://alapalooza.github.io/#gallery-2023" || window.location.href == "domain.com#gallery-2023"){
 		displayGallery2023();
 	}
+	else if(window.location.href == INDEX_HTML_PATH + "#gallery-2024" || window.location.href == "https://alapalooza.github.io/#gallery-2024" || window.location.href == "domain.com#gallery-2024"){
+		displayGallery2024();
+	}
 	else if(window.location.href == INDEX_HTML_PATH + "#contact" || window.location.href == "https://alapalooza.github.io/#contact" || window.location.href == "domain.com#contact") {
 		displayContact();
 	}
 	else {
 		displayError();
-	}
-}
-
-function toggleGalleryTextDW() {
-	var selected_element = document.getElementById("gallery-info-dw");
-	var selected_element2 = document.getElementById("gallery-title-dw");
-	
-	if(is_dw_text_hidden) {
-		selected_element.removeAttribute("hidden");
-		selected_element2.removeAttribute("hidden");
-		is_dw_text_hidden = false;
-	}
-	else if(!is_dw_text_hidden) {
-		selected_element.setAttribute("hidden", "hidden");
-		selected_element2.setAttribute("hidden", "hidden");
-		is_dw_text_hidden = true;
-	}
-}
-function toggleGalleryTextFS() {
-	var selected_element = document.getElementById("gallery-info-fs");
-	var selected_element2 = document.getElementById("gallery-title-fs");
-	
-	if(is_fs_text_hidden) {
-		selected_element.removeAttribute("hidden");
-		selected_element2.removeAttribute("hidden");
-		is_fs_text_hidden = false;
-	}
-	else if(!is_fs_text_hidden) {
-		selected_element.setAttribute("hidden", "hidden");
-		selected_element2.setAttribute("hidden", "hidden");
-		is_fs_text_hidden = true;
-	}
-}
-function toggleGalleryTextTD() {
-	var selected_element = document.getElementById("gallery-info-td");
-	var selected_element2 = document.getElementById("gallery-title-td");
-	
-	if(is_td_text_hidden) {
-		selected_element.removeAttribute("hidden");
-		selected_element2.removeAttribute("hidden");
-		is_td_text_hidden = false;
-	}
-	else if(!is_td_text_hidden) {
-		selected_element.setAttribute("hidden", "hidden");
-		selected_element2.setAttribute("hidden", "hidden");
-		is_td_text_hidden = true;
-	}
-}
-function toggleGalleryTextKP() {
-	var selected_element = document.getElementById("gallery-info-kp");
-	var selected_element2 = document.getElementById("gallery-title-kp");
-	
-	if(is_kp_text_hidden) {
-		selected_element.removeAttribute("hidden");
-		selected_element2.removeAttribute("hidden");
-		is_kp_text_hidden = false;
-	}
-	else if(!is_kp_text_hidden) {
-		selected_element.setAttribute("hidden", "hidden");
-		selected_element2.setAttribute("hidden", "hidden");
-		is_kp_text_hidden = true;
 	}
 }
